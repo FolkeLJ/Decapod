@@ -34,7 +34,7 @@
 }
 .nav {
     display: grid;
-    grid-template-columns: 10fr 18fr 18fr 12fr 16fr 25fr 40fr;
+    grid-template-columns: 3rem 6rem 6rem 4rem 4rem 6rem 12rem;
     grid-column-gap: 60px;
     font-family: raleway;
     overflow: hidden;
@@ -110,4 +110,7 @@
     font-style: normal;
     font-size:1.2rem;
     text-align: center;
+}
+body {
+    background-color: #f9f9f9;
 }
