@@ -53,7 +53,7 @@ nav a{
 nav a:after{
     content: "";
     position: absolute;
-    background-color: #db0024;
+    background-color: #ff9028;
     height: 2px;
     width: 0;
     left: 0;
@@ -61,18 +61,19 @@ nav a:after{
     transition: 0.3s;
 }
 nav a:hover{
-    color:#db0024;
+    color:#ff9028;
 }
 nav a:hover:after {
     width:100%;
 }
 #maintitle {
-    color:#f9f9f9;
+    color:#f9f9f9; 
     font-size: 75px;
-    font-family: relation-one;
+    font-family: raleway;
     text-align: center;
     top: 30vh;
     position:relative;
+    text-shadow:  -4px 4px 3px #2b2b2b;
 }
 #supportingtext {
     color: #f9f9f9;
@@ -81,6 +82,7 @@ nav a:hover:after {
     text-align: center;
     position:relative;
     top:23vh;
+    text-shadow:  -4px 4px 3px #2b2b2b;
 }
 #crab {
     float: right;
@@ -90,13 +92,15 @@ nav a:hover:after {
     width:40rem;
 }
 #abouttitle {
+    background-image: url(../media/Briksdalbottom.png);
     position:relative;
     top: 50rem;
     font-family: adobe-caslon-pro, serif;
     font-weight: 600;
     font-style: normal;
     font-size: 2.5rem;
-    text-align: center;
+    text-align: justify;
+    color:#656b6f;
 }
 .abouttext1 {
     position:relative;
@@ -107,6 +111,7 @@ nav a:hover:after {
     font-size:1.5rem;
     line-height: 0.5rem;
     text-align:center;
+    color:656b6f;
 }
 .abouttext2 {
     position:relative;
@@ -120,6 +125,5 @@ nav a:hover:after {
 body {
     background-color: #f9f9f9;
 }
-.nav {
-    
-}
+
+
