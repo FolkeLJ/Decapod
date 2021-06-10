@@ -16,6 +16,7 @@
                     margin: 0%;
                 }
                 body {
+                    place-items: center;
                     background-image:url(media/janroar.jpg);
                     background-size: cover;
                     background-position: bottom;
@@ -34,10 +35,32 @@
             <a href="sustainability.html">SUSTAINABILITY</a>
         </nav>
     </head>
+
+    <body>
+        <!--ABOUT JAN ROAR-->
+        <div style="max-width: 60rem; max-height: 40rem; font-size: 1.5rem; text-align: justify; text-align-last: center; margin:auto; transform:translateY(220%);padding-left: 20%;padding-right: 20%;">
+            <p>Born and raised on the Norwegian island Karmøy, Jan Roar has always been close to the sea. Ever since childhood he took a particular interest for crabs. After spending the early days of his education and career as a mechanic, Jan Roar started designing and devloping machinery for the industrial production of crab - something he has now been doing for 33 years. Jan Roar is the inventor of all of MS-Solutions’ crab handling technologies and is thereby the most essential member of our team. .</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dicta tempore dolor debitis at provident sed ipsa recusandae quos minima itaque harum animi, numquam exercitationem. Magnam repellat beatae modi dignissimos quam quia illum voluptas quis perspiciatis facere nihil vitae dicta praesentium fugiat eligendi sapiente magni tempore dolorem ut, ex qui accusantium tempora repellendus possimus. Nam fuga laborum recusandae accusamus magni!</p>
+            <p style="font-weight: bold;">jan.storesund@decapod.no</p>
+        </div>
+        <!--TEAM-->
+        <div style="display: flex; justify-content: space-evenly; transform:translateY(360%)">
+            <img class="portrait" src="media/Kjell.png">
+            <img class="portrait" src="media/egil.png">
+            <img class="portrait" src="media/folke.png">
+        </div>
+    </body>
 </html>
 
 <style>
-    #logo {
+    :root{
+    --darkblue: #233866;
+    --lightblue: #1897cc;
+    --backgroundgrey: #f9f9f9;
+    --darkred:#db0024;
+    --textgrey: #656b6f;
+}
+#logo {
     position: fixed;
     left: 20px;
     top: 20px;
@@ -106,7 +129,7 @@ nav a:hover:after {
     width:100%;
 }
 #maintitle {
-    color:#f9f9f9; 
+    color: var(--backgroundgrey); 
     font-size: 75px;
     font-family: raleway;
     text-align: center;
@@ -162,9 +185,68 @@ nav a:hover:after {
     text-align: center;
 }
 body {
-    background-color: #f9f9f9;
+    background-color: var(--backgroundgrey);
 }
-
-
-
+.quote {
+    position: relative;
+    font-family: adobe-calson-pro, serif;
+    font-style: normal;
+    font-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:30rem;
+    width: 35rem;
+    text-align: center;
+}
+.card{
+    color:#ffffff;
+    background-image: url(../media/singaporecrab.jpg);
+    background-size: cover;
+    padding: 10rem;
+    max-width: 35ch;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    font-family: adobe-calson-pro;
+    transition: transform 500ms ease;
+}
+.card:hover {
+    transform:scale(1.05);
+}
+.card-content{
+    background: rgba(35, 56, 102, 0.65);
+    transform: translate(-57%, 175%);
+    transition: transform 500ms ease; 
+    text-indent: 1rem;
+}
+.card:hover .card-content {
+    transform: translate(-57%, 100%);
+}
+.card-title {
+    position: relative;
+    width: max-content;
+}
+.card-title::after {
+    content:"";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.card:hover .card-title::after {
+    transform:scaleX(1);
+}
+.card-body{
+    color: rgb(255 255 255 / 0.85);
+}
+.button{
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    color: lightblue;
+    background-color: red;
+    padding: 0.5em 1.25em;
+    border-radius: 0.25rem;   
+}
 </style>
