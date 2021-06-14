@@ -1,3 +1,4 @@
+/*UNIVERSAL*/
 :root{
     --darkblue: #233866;
     --lightblue: #1897cc;
@@ -5,8 +6,12 @@
     --darkred:#db0024;
     --textgrey: #656b6f;
 }
+body {
+    background-color: var(--backgroundgrey);
+    margin:0%;
+}
 #logo {
-    position: fixed;
+    position: absolute;
     left: 20px;
     top: 20px;
     z-index: 1;
@@ -14,17 +19,8 @@
     height: 40px;
     object-fit: contain;
 }
-#briksdal {
-    display: grid;
-    grid-template-columns: 1fr;
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
 #decapod {
-    position: fixed;
+    position: absolute;
     left: 70px;
     top: -18px;
     color: black;
@@ -33,7 +29,7 @@
 }
 #slogan {
     font-family: relation-one;
-    position: fixed;
+    position: absolute;
     left: 71px;
     top: 32px;
     color: black;
@@ -73,77 +69,172 @@ nav a:hover{
 nav a:hover:after {
     width:100%;
 }
-#maintitle {
+.footer{
+    background: linear-gradient(#f9f9f9, #1897cc);
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform:translateY(185rem);
+    z-index: -1;
+}
+.footer-text{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; 
+    grid-template-areas: ". . .";
+    width: 100%;
+    margin-bottom: 3%;
+    position:absolute;
+    bottom: 0;
+}
+/*INDEX*/
+.background{
+    height: 100vh;
+    background-image: url(../media/briksdaltop.png);
+    background-size: cover;
+    position: static;
+    background-position: bottom;
+    background-repeat:no-repeat;
+}
+.title {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 26vh;
+}
+.title-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+}
+.title-title {
     color: var(--backgroundgrey); 
     font-size: 75px;
     font-family: raleway;
     text-align: center;
-    top: 30vh;
-    position:relative;
     text-shadow:  -4px 4px 3px #2b2b2b;
+    margin: 0;
 }
-#supportingtext {
+.title-supportingtext {
     color: #f9f9f9;
     font-size: 30px;
     font-family: relation-one;
     text-align: center;
-    position:relative;
-    top:23vh;
     text-shadow:  -4px 4px 3px #2b2b2b;
+    margin: 0;
 }
-#crab {
-    float: right;
-    position: relative;
-    top: 60rem;
-    object-fit:cover;
-    width:40rem;
-}
-#abouttitle {
+.about{
+    transform: translateY(-2px);
     background-image: url(../media/Briksdalbottom.png);
-    position:relative;
-    top: 50rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-bottom: 0.1rem;
+}
+.about-IMGcrab{
+    float:right;
+    width: 40%;
+    padding-top: 10%;
+}
+.about-text{
+    max-width: 60%;
+    margin-bottom: 10rem;
+}
+.about-text-title {
     font-family: adobe-caslon-pro, serif;
     font-weight: 600;
     font-style: normal;
     font-size: 2.5rem;
-    text-align: justify;
-    color:#656b6f;
+    text-align:center;
+    margin-left: 10%;
+    padding-top: 0;
+    margin-top: 0;
 }
-.abouttext1 {
-    position:relative;
-    top:110vh;
+.about-text-body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.about-text-body-1 {
     font-family: adobe-caslon-pro, serif;
     font-weight: 600;
     font-style: normal;
     font-size:1.5rem;
     line-height: 0.5rem;
     text-align:center;
-    color:656b6f;
 }
-.abouttext2 {
-    position:relative;
-    top:110vh;
+.about-text-body-2 {
     font-family: adobe-caslon-pro, serif;
     font-weight: 600;
     font-style: normal;
     font-size:1.2rem;
     text-align: center;
 }
-body {
-    background-color: var(--backgroundgrey);
-}
-.quote {
-    position: relative;
+.quotes {
+    position:static;
     font-family: adobe-calson-pro, serif;
     font-style: normal;
     font-size: 3rem;
+    transform: translateY(10rem);
+}
+.quote-1{
+    background-image: url(../media/BrushStroke.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    height:30rem;
-    width: 35rem;
+    margin: auto;
+    max-width: 33rem;
+    text-align: center;
+    padding: 5rem;
+    float: left;
+    transform: translateX(20%);
+}
+.quote-2{
+    background-image: url(../media/BrushStroke.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    max-width: 33rem;
+    text-align: center;
+    padding: 5rem;
+    float: right;
+    transform: translateX(-100%);
+    transform: translateY(-10rem);
+}
+.video{
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    transform: translateY(50rem);
+    z-index: 1;
+}
+.video iframe{
+   position: absolute;
+   width: 80%;
+   height: 80%;
+   top: 0;
+   left: 10%;
+}
+.subscribe{
+    margin:auto;
+    width: 50%;
+    transform: translateY(40rem);
+}
+.subscribe-top{
+    font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
+.subscripe-bot{
+}
+input{
+    position:relative;
+    left: 5rem;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+/*TEAM*/
 .card{
     color:#ffffff;
     background-image: url(../media/singaporecrab.jpg);
