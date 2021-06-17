@@ -7,7 +7,7 @@
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/wqn4imc.css">
     <link rel="icon" type="img/png" href="media/Logo.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css"> 
     <body>
         <!--HEAD-->
         <head class="head">
@@ -61,10 +61,10 @@
         <!--Quotes-->
         <section class="quotes">
             <div class="quote-1">
-                <p></p>We've been serving crab for 35 years and have never seen produce like this</p>
+                <p class="quote-1-text">"We've been serving crab for 35 years and have never seen produce like this"</p>
             </div>
             <div class="quote-2">
-                <p>In terms of health and environmental sustainability Decapod's crab stands unmathced</p>
+                <p class="quote-2-text">"In terms of health and environmental sustainability Decapod's crab stands unmathced"</p>
             </div>
         </section>
         <!--VIDEO-->
@@ -78,312 +78,32 @@
             </section>
             <section class="subscribe-bot">
                 <input type="email" placeholder="Email"> 
-                <input type="submit" value="SUBSCRIBE">
+                <input type="submit" class="button2" value="SUBSCRIBE">
             </section>
         </section>
         <!--FOOTER-->
-        <section class="footer">
-            <section class="footer-text">
-                <div>
-                    <p>DECAPOD <br> Feeding the World Sustainably</p>
-                </div>
-                <div>
-                    <p>Staumøyvegen 28B, 5544 Vålevåg <br> Phone: (+47) 90770976 <br> Email: Inquiries@ms-solutions.no </p>
-                </div>
-                <div>
-                    <p>© MS Solutions AS</p>
-                </div>
+        <section class="footer" style="background: linear-gradient(#f9f9f9, #1897cc);transform: translateY(190rem);">
+            <section class="footer-container">
+                <section class="footer-container-text" >
+                    <div style="display:flex; align-items: center; justify-content: center;">
+                        <div>
+                            <img src="media/Logo.png" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
+                            <p style="font-size: 34px; margin:0; font-weight: bold;" >DECAPOD</p>
+                            <p style="margin:0; font-weight: bold;">Feeding the World Sustainably</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(2.1rem);">
+                        <div>
+                            <p style="font-weight: bold;">Staumøyvegen 28B, 5544 Vålevåg <br> Phone: (+47) 90770976 <br> Email: Inquiries@ms-solutions.no</p>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(3.2rem);">
+                        <div>
+                            <p style="font-weight: bold;">© MS Solutions AS</p>
+                        </div>
+                    </div>
+                </section>
             </section>
         </section>
     </body>
 </html>
-
-<style>
-    /*UNIVERSAL*/
-:root{
-    --darkblue: #233866;
-    --lightblue: #1897cc;
-    --backgroundgrey: #f9f9f9;
-    --darkred:#db0024;
-    --textgrey: #656b6f;
-}
-body {
-    background-color: var(--backgroundgrey);
-    margin:0%;
-}
-#logo {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-#decapod {
-    position: absolute;
-    left: 70px;
-    top: -18px;
-    color: black;
-    text-align: left;
-    font-size: 34px;
-}
-#slogan {
-    font-family: relation-one;
-    position: absolute;
-    left: 71px;
-    top: 32px;
-    color: black;
-    font-size: 15px;
-}
-nav {
-    height: 9vh;
-    width: 105vh;
-    max-width: 700px;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    margin:auto;
-}
-nav a{
-    position: relative;
-    text-decoration: none;
-    font-family: raleway;
-    padding: 30px 0px;
-    color: black;
-    font-size: 15px;
-    padding: 6px;
-}
-nav a:after{
-    content: "";
-    position: absolute;
-    background-color: #ff9028;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: 5px;
-    transition: 0.3s;
-}
-nav a:hover{
-    color:#ff9028;
-}
-nav a:hover:after {
-    width:100%;
-}
-.footer{
-    background: linear-gradient(#f9f9f9, #1897cc);
-    height: 50vh;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    transform:translateY(185rem);
-    z-index: -1;
-}
-.footer-text{
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; 
-    grid-template-areas: ". . .";
-    width: 100%;
-    margin-bottom: 3%;
-    position:absolute;
-    bottom: 0;
-}
-/*INDEX*/
-.background{
-    height: 100vh;
-    background-image: url(../media/briksdaltop.png);
-    background-size: cover;
-    position: static;
-    background-position: bottom;
-    background-repeat:no-repeat;
-}
-.title {
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 26vh;
-}
-.title-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8%;
-}
-.title-title {
-    color: var(--backgroundgrey); 
-    font-size: 75px;
-    font-family: raleway;
-    text-align: center;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-    margin: 0;
-}
-.title-supportingtext {
-    color: #f9f9f9;
-    font-size: 30px;
-    font-family: relation-one;
-    text-align: center;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-    margin: 0;
-}
-.about{
-    transform: translateY(-2px);
-    background-image: url(../media/Briksdalbottom.png);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding-bottom: 0.1rem;
-}
-.about-IMGcrab{
-    float:right;
-    width: 40%;
-    padding-top: 10%;
-}
-.about-text{
-    max-width: 60%;
-    margin-bottom: 10rem;
-}
-.about-text-title {
-    font-family: adobe-caslon-pro, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.5rem;
-    text-align:center;
-    margin-left: 10%;
-    padding-top: 0;
-    margin-top: 0;
-}
-.about-text-body {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.about-text-body-1 {
-    font-family: adobe-caslon-pro, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size:1.5rem;
-    line-height: 0.5rem;
-    text-align:center;
-}
-.about-text-body-2 {
-    font-family: adobe-caslon-pro, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size:1.2rem;
-    text-align: center;
-}
-.quotes {
-    position:static;
-    font-family: adobe-calson-pro, serif;
-    font-style: normal;
-    font-size: 3rem;
-    transform: translateY(10rem);
-}
-.quote-1{
-    background-image: url(../media/BrushStroke.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    max-width: 33rem;
-    text-align: center;
-    padding: 5rem;
-    float: left;
-    transform: translateX(20%);
-}
-.quote-2{
-    background-image: url(../media/BrushStroke.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    max-width: 33rem;
-    text-align: center;
-    padding: 5rem;
-    float: right;
-    transform: translateX(-100%);
-    transform: translateY(-10rem);
-}
-.video{
-    position: relative;
-    height: 0;
-    padding-bottom: 56.25%;
-    transform: translateY(50rem);
-    z-index: 1;
-}
-.video iframe{
-   position: absolute;
-   width: 80%;
-   height: 80%;
-   top: 0;
-   left: 10%;
-}
-.subscribe{
-    margin:auto;
-    width: 50%;
-    transform: translateY(40rem);
-}
-.subscribe-top{
-    font-size: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.subscripe-bot{
-}
-input{
-    position:relative;
-    left: 5rem;
-    font-size: 2rem;
-    box-sizing: border-box;
-}
-
-/*TEAM*/
-.card{
-    color:#ffffff;
-    background-image: url(../media/singaporecrab.jpg);
-    background-size: cover;
-    padding: 10rem;
-    max-width: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    font-family: adobe-calson-pro;
-    transition: transform 500ms ease;
-}
-.card:hover {
-    transform:scale(1.05);
-}
-.card-content{
-    background: rgba(35, 56, 102, 0.65);
-    transform: translate(-57%, 175%);
-    transition: transform 500ms ease; 
-    text-indent: 1rem;
-}
-.card:hover .card-content {
-    transform: translate(-57%, 100%);
-}
-.card-title {
-    position: relative;
-    width: max-content;
-}
-.card-title::after {
-    content:"";
-    position: absolute;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-.card:hover .card-title::after {
-    transform:scaleX(1);
-}
-.card-body{
-    color: rgb(255 255 255 / 0.85);
-}
-.button{
-    cursor: pointer;
-    display: inline;
-    text-decoration: none;
-    color: lightblue;
-    background-color: red;
-    padding: 0.5em 1.25em;
-    border-radius: 0.25rem;   
-}
-</style>
