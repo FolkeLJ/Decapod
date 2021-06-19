@@ -10,39 +10,41 @@ body {
     background-color: var(--backgroundgrey);
     margin:0%;
 }
-#logo {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
+.logo-container{
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    max-width: 14rem;
+}
+.logo {
+    position: relative;
     object-fit: contain;
 }
-#decapod {
-    position: absolute;
-    left: 70px;
-    top: -18px;
-    color: black;
-    text-align: left;
-    font-size: 34px;
+.decapod {
+    position: relative;
+    font-size: 2.7rem;
+    top: -7rem;
+    left: 4.2rem;
 }
-#slogan {
+.slogan {
     font-family: relation-one;
-    position: absolute;
-    left: 71px;
-    top: 32px;
-    color: black;
-    font-size: 15px;
+    font-size: 1.2rem;
+    position: relative;
+    top: -10.1rem;
+    left: 4.2rem;
 }
 nav {
+    position: relative;
+    top: -14.5rem;
     height: 9vh;
-    width: 105vh;
+    width: 80vw;
     max-width: 700px;
     display: flex;
     justify-content: space-around;
     align-items:center;
-    margin:auto;
+    margin-left: 20rem;
+    margin-right: 5rem;
+    float: left;
 }
 nav a{
     position: relative;
@@ -99,6 +101,7 @@ nav a:hover:after {
     background-repeat:no-repeat;
 }
 .title {
+    transform: translateY(-15rem);
     margin-left: 15vw;
     margin-right: 15vw;
     margin-top: 26vh;
@@ -394,4 +397,18 @@ input{
 .section3{
     transform: translateY(-45rem);
     text-align: center;
+}
+.section4{
+    transform: translateY(-40rem);
+}
+.section4-fcr-cattle{
+    width: 45rem;
+    float: left;
+}
+.section4-text{
+    width: 20rem;
+    float: right;
+}
+.section4-text-background{
+    background-image: url(media/brushtroke1.png);
 }
