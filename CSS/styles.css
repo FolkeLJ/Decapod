@@ -14,7 +14,7 @@ body {
     position: relative;
     left: 1rem;
     top: 1rem;
-    max-width: 14rem;
+    max-width: 15rem;
 }
 .logo {
     position: relative;
@@ -22,31 +22,32 @@ body {
     width: 4rem;
 }
 .decapod {
+    font-family: raleway, sans-serif;
     position: relative;
-    font-size: 2.7rem;
+    font-size: 2.9rem;
     top: -4.5rem;
-    left: 4.6rem;
-    color: black;
+    left: 4.5rem;
     text-decoration: none;
     margin-top: 0;
     margin-bottom: 0;
+    color: black;
 }
 .slogan {
-    font-family: relation-one;
-    font-size: 1.2rem;
+    font-family: bree, sans-serif;
+    font-size: 1.04rem;
     position: relative;
-    top: -5rem;
+    top: -5.3rem;
     left: 4.6rem;
-    color: black;
     text-decoration: none;
     margin-top: 0;
+    color: black;
 }
 .nav-container{
     position: absolute;
     top: 2rem;
-    left: 17rem;
+    left: 20rem;
     width: 80vw;
-    max-width: 70rem;
+    max-width: 50rem;
 }
 nav {
     display: flex;
@@ -238,6 +239,39 @@ nav a:hover:after {
     grid-template-areas: ". . .";
     width: 100%;
 }
+.footer-decapod-container{
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+    max-width: 15rem;
+}
+.footer-decapod-logo{
+    position: relative;
+    object-fit: contain;
+    width: 4rem;
+}
+.footer-decapod{
+    font-family: raleway, sans-serif;
+    position: relative;
+    font-size: 2.9rem;
+    top: 0rem;
+    left: 0rem;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:black;
+}
+.footer-decapod-slogan{
+    font-family: bree, sans-serif;
+    font-size: 1.04rem;
+    position: relative;
+    top: -0.8rem;
+    left: 0.1rem;
+    text-decoration: none;
+    margin-top: 0;
+    color: black;
+
+}
 /*FONTS*/
 h1 {
     font-family: bree, sans-serif;
@@ -251,22 +285,22 @@ h2 {
     font-weight: 600;
     font-style: normal;
 }
-h3 {
-    font-family: continuo, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
+h3{
+    font-family: raleway, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
     font-style: normal;
 }
 h4 {
-    font-family: tablet-gothic-condensed, sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
+    font-family: bree, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
     font-style: normal;
 }
 p {
-    font-family: raleway;
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-family: bree, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
     font-style: italic;
 }
 h5 {
@@ -276,9 +310,9 @@ h5 {
     font-style: italic;
 }
 a {
-    font-family: continuo, sans-serif;
+    font-family: raleway, sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -330,17 +364,12 @@ a {
 }
 .about-text{
     max-width: 60%;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
+    margin-top: -2.7rem;
     margin-left: 3%;
 }
-.about-text-title {
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    margin-top: 0;
-}
 .about-text-body {
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -361,11 +390,11 @@ a {
     }
 }
 .quote-1{
-    background-image: url(../media/brushstroke1.png);
+    background-image: url(../media/brushstroke1.jpg);
     background-repeat: no-repeat;
     background-size:contain;
     margin: auto;
-    max-width: 50rem;
+    max-width: 40rem;
     max-height: 30rem;
     text-align: center;
     padding: 5rem;
@@ -373,7 +402,7 @@ a {
     float: left;
 }
 .quote-2{
-    background-image: url(../media/brushstroke2.png);
+    background-image: url(../media/brushstroke2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     margin: auto;
@@ -386,18 +415,32 @@ a {
     width: 90%;
     margin-left: auto;
     margin-right:auto;
+    margin-bottom: 0;
+}
+.quote-1-text2{
+    margin-top: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .quote-2-text{
     width: 90%;
     margin-left: auto;
     margin-right:auto;
-    transform: translateY(-2.5rem);
+    margin-bottom: 0;
+}
+.quote-2-text2{
+    margin-top: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto;
 }
 .video{
     position: relative;
     height: 0;
     padding-bottom: 56.25%;
     z-index: 1;
+    margin-top: 5rem;
 }
 .video iframe{
    position: absolute;
@@ -426,6 +469,7 @@ input{
     left: 5rem;
     font-size: 2rem;
     box-sizing: border-box;
+    border-radius: 2rem;
 }
 .button2{
     text-align: center;
@@ -564,15 +608,34 @@ input{
     background-position: top;
     background-repeat:no-repeat;
 }
-.header-sustainability-container{
-    margin-left:auto;
-    margin-right: auto;
-    width: 50%;
-    transform: translateY(18rem);
+.title-sustainability {
+    transform: translateY(-4rem);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 26vh;
+}
+.title-sustainability-title {
+    color: var(--backgroundgrey); 
+    text-align: center;
+    margin: 0;
+    font-size: 6rem;
+    background: -webkit-linear-gradient(45deg,#db0024, #1897cc );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+.title-sustainability-supportingtext {
+    color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    background: -webkit-linear-gradient(45deg,#db0024, #1897cc );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
 }
 .starfish{
     float: left;
-    transform:scaleY(-1) translateY(50rem);
+    transform: translateY(-55rem);
 }
 .section{
     width: 65rem;
