@@ -350,7 +350,6 @@ a {
     margin: 0;
 }
 .about{
-    transform: translateY(-2px);
     background-image: url(../media/Briksdalbottom.png);
     background-size: cover;
     background-position: top;
@@ -365,7 +364,7 @@ a {
 .about-text{
     max-width: 60%;
     margin-bottom: 15rem;
-    margin-top: -2.7rem;
+    margin-top: -2.1rem;
     margin-left: 3%;
 }
 .about-text-body {
