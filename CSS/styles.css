@@ -19,19 +19,27 @@ body {
 .logo {
     position: relative;
     object-fit: contain;
+    width: 4rem;
 }
 .decapod {
     position: relative;
     font-size: 2.7rem;
-    top: -7rem;
-    left: 4.2rem;
+    top: -4.5rem;
+    left: 4.6rem;
+    color: black;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .slogan {
     font-family: relation-one;
     font-size: 1.2rem;
     position: relative;
-    top: -10.1rem;
-    left: 4.2rem;
+    top: -5rem;
+    left: 4.6rem;
+    color: black;
+    text-decoration: none;
+    margin-top: 0;
 }
 .nav-container{
     position: absolute;
@@ -48,10 +56,8 @@ nav {
 nav a{
     position: relative;
     text-decoration: none;
-    font-family: raleway;
     padding: 30px 0px;
     color: black;
-    font-size: 15px;
     padding: 6px;
 }
 nav a:after{
@@ -232,17 +238,61 @@ nav a:hover:after {
     grid-template-areas: ". . .";
     width: 100%;
 }
+/*FONTS*/
+h1 {
+    font-family: bree, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: normal;
+}
+h2 {
+    font-family: bree, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: normal;
+}
+h3 {
+    font-family: continuo, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: normal;
+}
+h4 {
+    font-family: tablet-gothic-condensed, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: normal;
+}
+p {
+    font-family: raleway;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+}
+h5 {
+    font-family: adobe-calson-pro, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+a {
+    font-family: continuo, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 /*INDEX*/
 .background{
     height: 100vh;
     background-image: url(../media/briksdaltop.png);
     background-size: cover;
-    position: static;
     background-position: bottom;
     background-repeat:no-repeat;
 }
 .title {
-    transform: translateY(-15rem);
+    transform: translateY(-4rem);
     margin-left: 15vw;
     margin-right: 15vw;
     margin-top: 26vh;
@@ -255,16 +305,12 @@ nav a:hover:after {
 }
 .title-title {
     color: var(--backgroundgrey); 
-    font-size: 75px;
-    font-family: essonnes-text;
     text-align: center;
     text-shadow:  -4px 4px 3px #2b2b2b;
     margin: 0;
 }
 .title-supportingtext {
     color: #f9f9f9;
-    font-size: 30px;
-    font-family: relation-one;
     text-align: center;
     text-shadow:  -4px 4px 3px #2b2b2b;
     margin: 0;
@@ -285,41 +331,28 @@ nav a:hover:after {
 .about-text{
     max-width: 60%;
     margin-bottom: 10rem;
+    margin-left: 3%;
 }
 .about-text-title {
-    font-family: adobe-caslon-pro, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.5rem;
     text-align:center;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0;
     margin-top: 0;
 }
 .about-text-body {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .about-text-body-1 {
-    font-family: adobe-caslon-pro, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size:1.5rem;
-    line-height: 0.5rem;
     text-align:center;
+    margin-bottom: 0;
 }
 .about-text-body-2 {
-    font-family: adobe-caslon-pro, serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size:1.2rem;
     text-align: center;
+    margin-top: 0.4rem;
 }
 .quotes {
-    position:static;
-    font-family: adobe-calson-pro, serif;
-    font-style: normal;
-    font-size: 2.5rem;
     height: 40rem;
 }
 @media (max-width:111rem){
@@ -424,6 +457,29 @@ input{
     font-size: 0;
     border-left-color: #1ECD97;
     -webkit-animation: rotating 2s 0.25s
+}
+/*TEAM*/
+.background-team{
+    height: 200vh;
+    background-image: url(../media/janroar.png);
+    background-size: cover;
+    position: static;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+.header-team-container{
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+    transform: translateY(12rem);
+}
+.header-team{
+    color: var(--backgroundgrey); 
+    font-size: 75px;
+    font-family: essonnes-text;
+    text-align: center;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+    margin: 0;
 }
 /*RECIPES*/
 .card{

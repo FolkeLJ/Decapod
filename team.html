@@ -1,50 +1,65 @@
 <!doctype html>
 
-<html lang="en"> 
-    <head class="head">
-        <!--META-->
-            <meta charset="uft-8">
-            <meta name="viewport" content="width-device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="https://use.typekit.net/wqn4imc.css">
-            <link rel="icon" type="img/png" href="media/Logo.png">
-            <link rel="stylesheet" type="text/css" href="CSS/styles.css"> 
-        <!--NAV-->
-        <nav>
-            <style>
-                body, html {
-                    height: 100%;
-                    margin: 0%;
-                }
-                body {
-                    place-items: center;
-                    background-image:url(media/janroar.png);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat:no-repeat;
-                    padding-bottom: 100%;
-                }
-            </style>
-            <title id="tile">DECAPOD</title>
-            <p id="decapod">DECAPOD</p>
-            <p id="slogan" href="#index">Feeding the World Sustainably</p>
-            <a href="index.html">HOME</a>
-            <a href="products.html">PRODUCTS</a>
-            <a href="team.html">OUR TEAM</a>
-            <a href="recipes.html">RECIPES</a>
-            <a href="partners.html">PARTNERS</a>
-            <a href="sustainability.html">SUSTAINABILITY</a>
-        </nav>
-    </head>
-
+<html lang="en">
+    <!--META-->
+    <meta charset="uft-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/wqn4imc.css">
+    <link rel="icon" type="img/png" href="media/logo.svg">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css"> 
     <body>
+        <head>
+            <section class="background-team">
+                <!--NAV-->
+                <title>DECAPOD</title>
+                <section class="logo-container">
+                    <img class="logo" src="media/logo.svg">
+                    <a href="index.html" class="decapod">DECAPOD</a>
+                    <a href="index.html" class="slogan" href="#index">Feeding the World Sustainably</a>
+                </section>
+                <section class="nav-container">
+                    <nav>
+                        <a href="index.html">HOME</a>
+                        <a href="products.html">PRODUCTS</a>
+                        <a href="team.html">OUR TEAM</a>
+                        <a href="recipes.html">RECIPES</a>
+                        <a href="partners.html">PARTNERS</a>
+                        <a href="sustainability.html">SUSTAINABILITY</a>
+                    </nav>
+                </section>
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="products.html">PRODUCTS</a></li>
+                                    <li><a href="team.html">OUR TEAM</a></li>
+                                    <li><a href="recipes.html">RECIPES</a></li>
+                                    <li><a href="partners.html">PARTNERS</a></li>
+                                    <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="header-team-container">
+                    <h1 class="header-team">Our Team</h1>
+                </section>
+            </section> 
+        </head>
+
+    
         <!--ABOUT JAN ROAR-->
-        <div style="max-width: 60rem; max-height: 40rem; font-size: 1.5rem; text-align: justify; text-align-last: center; margin:auto; transform:translateY(220%);padding-left: 20%;padding-right: 20%;">
+        <div style="max-width: 60rem; max-height: 40rem; font-size: 1.5rem; text-align: justify; text-align-last: center; margin:auto; transform:translateY(-130%);padding-left: 20%;padding-right: 20%;">
             <p>Born and raised on the Norwegian island Karmøy, Jan Roar has always been close to the sea. Ever since childhood he took a particular interest for crabs. After spending the early days of his education and career as a mechanic, Jan Roar started designing and devloping machinery for the industrial production of crab - something he has now been doing for 33 years. Jan Roar is the inventor of all of MS-Solutions’ crab handling technologies and is thereby the most essential member of our team. .</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dicta tempore dolor debitis at provident sed ipsa recusandae quos minima itaque harum animi, numquam exercitationem. Magnam repellat beatae modi dignissimos quam quia illum voluptas quis perspiciatis facere nihil vitae dicta praesentium fugiat eligendi sapiente magni tempore dolorem ut, ex qui accusantium tempora repellendus possimus. Nam fuga laborum recusandae accusamus magni!</p>
             <p style="font-weight: bold;">jan.storesund@decapod.no</p>
         </div>
         <!--TEAM-->
-        <section class="team" style="transform:translateY(110%)">
+        <section class="team" style="transform:translateY(-50%)">
             <div style="display: flex; justify-content: space-evenly;">
                 <img class="portrait" src="media/Kjell.png">
                 <img class="portrait" src="media/egil.png">
@@ -57,12 +72,12 @@
             </div>
         </section>
         <!--FOOTER-->
-        <section class="footer" style="background: linear-gradient(#f9f9f9, #ffca81); transform:translateY(100rem);">
+        <section class="footer" style="background: linear-gradient(#f9f9f9, #ffca81); transform:translateY(150rem);">
             <section class="footer-container">
                 <section class="footer-container-text" >
                     <div style="display:flex; align-items: center; justify-content: center;">
                         <div>
-                            <img src="media/Logo.png" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
+                            <img src="media/logo.svg" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
                             <p style="font-size: 34px; margin:0; font-weight: bold;" >DECAPOD</p>
                             <p style="margin:0; font-weight: bold;">Feeding the World Sustainably</p>
                         </div>
