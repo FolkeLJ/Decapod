@@ -643,6 +643,46 @@ input{
     float: left;
     transform: translateY(-55rem);
 }
+.section-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(24, 151, 204, 0.4);
+}
+.section-container span{
+    position: absolute;
+    bottom: -100px;
+    background: transparent;
+    border-radius: 50%;
+ 
+    pointer-events: none;
+    box-shadow: inset 0 0 35px
+        rgba(255, 255, 255, 0.5);
+    animation: animate 4s linear infinite;
+}
+.section-container span::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%, -70%);
+    background:
+      radial-gradient(#ffffffda, transparent);
+    border-radius: 50%;
+}
+@keyframes animation {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1200%);
+        opacity: 1;
+    }
+}
 .section{
     width: 65rem;
     height: 200rem;
@@ -677,4 +717,70 @@ input{
 }
 .section4-text-background{
     background-image: url(media/brushtroke1.png);
+}
+.footer-sustainability{
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(310rem);
+    background-image: url(../media/seafloor.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat:no-repeat;
+}
+.footer-sustainability-container{
+    margin-bottom: 3%;
+    position:absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+.footer-sustainability-container-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid: 1fr;
+    width: 100%;
+    align-items: center;
+}
+.footer-sustainability-container-text{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; 
+    grid-template-areas: ". . .";
+    width: 100%;
+}
+.footer-sustainability-decapod-container{
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+    max-width: 15rem;
+}
+.footer-sustainability-decapod-logo{
+    position: relative;
+    object-fit: contain;
+    width: 4rem;
+}
+.footer-sustainability-decapod{
+    font-family: raleway, sans-serif;
+    position: relative;
+    font-size: 2.9rem;
+    top: 0rem;
+    left: 0rem;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+}
+.footer-sustainability-decapod-slogan{
+    font-family: bree, sans-serif;
+    font-size: 1.04rem;
+    position: relative;
+    top: -0.8rem;
+    left: 0.1rem;
+    text-decoration: none;
+    margin-top: 0;
+    color: #f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
 }

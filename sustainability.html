@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/wqn4imc.css">
     <link rel="icon" type="img/png" href="media/logo.svg">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css"> 
-    <body class="head">
+    <body>
         <!--HEAD-->
         <head>
             <section class="background-sustainability">
@@ -51,36 +51,68 @@
                     <h1 class="title-sustainability-title">Sustainability</h1>
                     <h2 class="title-sustainability-supportingtext">Maximum taste. Minimum Waste.</h2>
                 </section>
-            </section> 
+            </section>
         </head>
         <img class="starfish" src="media/Starfish.png">
-        <section class="section">
-            <section class="section1">
-                <h1 style="color:#104364; margin-bottom: 1rem; margin-top: 0;">Our Obligation to Nature</h1>
-                <p style="font-size: 2rem; margin-top: 0;">We reduce the resource burden to our planet and foster a sustainable future with record low Co2e emissions and efficient feeding, while maintaining the highest standards of animal well-being.</p>
-            </section>
-            <section class="section2">
-                <h1 style="padding-top: 2.5rem; padding-bottom: 1rem; z-index: 2; color:#104364" >CO<sub>2</sub>e</h1>
-                <img src="media/Co2e.svg" style="width: 100%;">
-            </section>
-            <section class=section3>
-                <h1 style="padding-top: 3rem; padding-bottom: 2.5rem;z-index: 2; color: #104364" >Feed Conversion Ratio</h1>
-            </section>
-            <section class="section4">
-                <img src="media/cow.svg" style="width:65rem; margin-bottom: 3rem;">
-                <img src="media/chicken.svg" style="width: 65rem; margin-bottom: 3rem;">
-                <img src="media/fish.svg" style="width: 65rem; margin-bottom: 3rem;">
-                <img src="media/crab.svg" style="width: 65rem; margin-bottom: 3rem;">
+        <section class="section-container">
+            <section class="section">
+                <section class="section1">
+                    <h1 style="color:#104364; margin-bottom: 1rem; margin-top: 0;">Our Obligation to Nature</h1>
+                    <p style="font-size: 2rem; margin-top: 0;">We reduce the resource burden to our planet and foster a sustainable future with record low Co2e emissions and efficient feeding, while maintaining the highest standards of animal well-being.</p>
+                </section>
+                <section class="section2">
+                    <h1 style="padding-top: 2.5rem; padding-bottom: 1rem; z-index: 2; color:#104364" >CO<sub>2</sub>e</h1>
+                    <img src="media/Co2e.svg" style="width: 100%;">
+                </section>
+                <section class=section3>
+                    <h1 style="padding-top: 3rem; padding-bottom: 2.5rem;z-index: 2; color: #104364" >Feed Conversion Ratio</h1>
+                </section>
+                <section class="section4">
+                    <img src="media/cow.svg" style="width:65rem; margin-bottom: 3rem;">
+                    <img src="media/chicken.svg" style="width: 65rem; margin-bottom: 3rem;">
+                    <img src="media/fish.svg" style="width: 65rem; margin-bottom: 3rem;">
+                    <img src="media/crab.svg" style="width: 65rem; margin-bottom: 3rem;">
+                </section>
+                
+                <script type="text/javascript">
+                    function createBubble() {
+                        const section =
+                            document.querySelector(".section-container");
+                        const createElement =
+                            document.createElement("span");
+                        var size = Math.random() * 60;
+        
+                        createElement.style.animation =
+                        "animation 6s linear infinite";
+                        createElement.style.width = 35 + size + "px";
+                        createElement.style.height = 35 + size + "px";
+                        createElement.style.left =
+                        Math.random() * innerWidth + "px";
+                        section.appendChild(createElement);
+        
+                        setTimeout(() => {
+                            createElement.remove();
+                        }, 6000);
+                    }
+                    setInterval(createBubble, 850);
+                </script>
             </section>
         </section>
         <!--FOOTER-->
-        <section class="footer" style="background: linear-gradient(#f9f9f9, #68a3c2);transform: translateY(280rem);">
-            <section class="footer-container">
-                <section class="footer-container-text" >
+        <section class="footer-sustainability">
+            <section class="footer-sustainability-container">
+                <section class="footer-sustainability-container-images">
+                    <img src="media/Coral.png" style="width: 80%;">
+                    <img src="media/Seaweed.png" style="width: 50%;">
+                    <img src="media/Crab2.png" style="width: 35%;">
+                    <img src="media/Seaweed2.png" style="width: 50%;">
+                    <img src="media/Croral2.png" style="width: 80%;">
+                </section>
+                <section class="footer-sustainability-container-text" >
                     <div style="display:flex; align-items: center; justify-content: center;">
-                        <div class="footer-decapod-container">
-                            <img class="footer-decapod-logo" src="media/logo.svg" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
-                            <a class="footer-decapod" href="index.html" style="font-family: raleway, sans-serif; font-size: 2.9rem; text-decoration: none;">DECAPOD</a>
+                        <div class="footer-sustainability-decapod-container">
+                            <img class="footer-sustainability-decapod-logo" src="media/logo.svg" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
+                            <a class="footer-sustainability-decapod" href="index.html" style="font-family: raleway, sans-serif; font-size: 2.9rem; text-decoration: none;">DECAPOD</a>
                             <a class="footer-decapod-slogan" href="index.html">Feeding the World Sustainably</a>
                         </div>
                     </div>
