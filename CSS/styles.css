@@ -564,7 +564,6 @@ input{
 }
 .card{
     color:#ffffff;
-    background-image: url(../media/singaporecrab.jpg);
     background-size: cover;
     padding: 10rem;
     width: 35ch;
@@ -577,7 +576,16 @@ input{
     margin-right: auto;
     margin-top: 10rem;
     margin-bottom: 5rem;
-    
+}
+.card1{
+    background-image: url(../media/singaporecrab.jpg);
+}
+.card2{
+    background-image: url(../media/sushi.jpg);
+}
+.card3{
+    background-image: url(../media/avocadocrabboats.jpg);
+
 }
 .card:hover {
     transform:scale(1.05);
@@ -590,14 +598,15 @@ input{
     transform: translate(-10rem, 21.5rem);
 }
 .card:hover .card-content {
-    transform: translate(-10rem, 10rem);
+    transform: translate(-10rem, 13rem);
 }
 .card-title {
     position: relative;
-    width: 14rem;
+    width: 18rem;
     margin-left: auto;
     margin-right: auto;
     transform: translateY(0.4rem);
+    text-align: center;
 }
 .card-title::after {
     content:"";
