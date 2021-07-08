@@ -323,7 +323,6 @@ a {
     font-style: normal;
 }
 
-
 /*INDEX*/
 .background{
     height: 100vh;
@@ -508,6 +507,19 @@ input{
     border-left-color: #1ECD97;
     -webkit-animation: rotating 2s 0.25s
 }
+/*PRODUCTS*/
+.background-products{
+    background-color: var(--backgroundgrey);
+}
+.timeline-container{
+    position: static;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.timeline{
+    width: 100%;
+}
 /*TEAM*/
 .background-team{
     height: 200vh;
@@ -532,6 +544,24 @@ input{
     margin: 0;
 }
 /*RECIPES*/
+.link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.arrow{
+    position: absolute;
+    bottom: 25px;
+    width: 10%;
+    height: 6px;
+    left: 43%;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
 .card{
     color:#ffffff;
     background-image: url(../media/singaporecrab.jpg);
@@ -547,6 +577,7 @@ input{
     margin-right: auto;
     margin-top: 10rem;
     margin-bottom: 5rem;
+    
 }
 .card:hover {
     transform:scale(1.05);
@@ -559,11 +590,11 @@ input{
     transform: translate(-10rem, 21.5rem);
 }
 .card:hover .card-content {
-    transform: translate(-10rem, -8.5rem);
+    transform: translate(-10rem, 10rem);
 }
 .card-title {
     position: relative;
-    width: 10.2rem;
+    width: 14rem;
     margin-left: auto;
     margin-right: auto;
     transform: translateY(0.4rem);
@@ -583,6 +614,7 @@ input{
     color: rgb(255 255 255 / 0.85);
     margin-left:auto;
     margin-right:auto;
+    text-align: center;
 }
 .card-recipe{
     margin-left:auto;
@@ -650,7 +682,7 @@ input{
     width: 100%;
     overflow: hidden;
     background: rgba(24, 151, 204, 0.4);
-    height: 250rem;
+    height: 270rem;
     z-index: -224;
 }
 .section-container span{
@@ -724,7 +756,7 @@ input{
     width: 100%;
     position: absolute;
     bottom: 0;
-    transform: translateY(270rem);
+    transform: translateY(295rem);
     background-image: url(../media/seafloor.png);
     background-size: cover;
     background-position: top;
