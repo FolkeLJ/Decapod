@@ -522,7 +522,8 @@ input{
     width: 100%;
 }
 .crabonplate{
-    width:35%;
+    width:80%;
+    transform: translateY(-10rem);
 }
 /*TEAM*/
 .background-team{
