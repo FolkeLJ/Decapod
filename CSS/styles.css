@@ -516,9 +516,13 @@ input{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 .timeline{
     width: 100%;
+}
+.crabonplate{
+    width:35%;
 }
 /*TEAM*/
 .background-team{
