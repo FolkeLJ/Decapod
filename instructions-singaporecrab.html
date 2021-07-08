@@ -48,6 +48,9 @@
                     </div>
                 </div>
             </section>
+            <section class="title" style="margin-top: 5rem; margin-bottom: 0;">
+                <h1 style="text-align: center; margin-bottom: 0;">Spicy Singapore Style Crab</h1>
+            </section>
             <section class="slideshow-container">
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
@@ -112,6 +115,32 @@
                 </section>
             </section>
         </head>
+        <!--FOOTER-->
+        <section class="footer" style="background: linear-gradient(#f9f9f9, #1897cc);transform: translateY(65rem);">
+            <section class="footer-container">
+                <section class="footer-container-text" >
+                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(-0.6rem);">
+                        <div class="footer-decapod-container">
+                            <img class="footer-decapod-logo" src="media/logo.svg" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
+                            <a class="footer-decapod" href="index.html" style="font-family: raleway, sans-serif; font-size: 2.9rem; text-decoration: none;">DECAPOD</a>
+                            <a class="footer-decapod-slogan" href="index.html">Feeding the World Sustainably</a>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(1.7rem);">
+                        <div>
+                            <a style="margin-bottom: 0;font-family: bree, sans-serif; font-size: 1.2rem;text-decoration: none; color: black" href="https://www.google.com/maps/search/Staum%C3%B8yvegen+28B,+5544+V%C3%A5lev%C3%A5g/@59.6983696,5.4654076,15z/data=!3m1!4b1">Staumøyvegen 28B, 5544 Vålevåg</a><br>
+                            <a href="tel:+47 90770976" style="font-family: bree, sans-serif; font-size: 1.2rem;text-decoration: none; color: black;margin-top: 0; margin-bottom: 0;">Phone: (+47) 90770976</h3><br>
+                            <a style="font-family: bree, sans-serif; font-size: 1.2rem; margin-top: 0;text-decoration: none; color: black;" href="mailto:inquiries@ms-solutions.no">Email: Inquiries@ms-solutions.no</a>
+                        </div>
+                    </div>
+                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(0rem);">
+                        <div>
+                            <h3 style="font-weight: bold; font-family: bree;">© DECAPOD AS</h3>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
     </body>
 </html>
 
@@ -240,18 +269,34 @@ ul {
 </style>
 
 <script>
-    var slideIndex = 0;
-      showSlides();
+window.print()
 
-      function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 4000); // Change image every 4 seconds
-      } 
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
 </script>

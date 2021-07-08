@@ -555,7 +555,7 @@ input{
 .arrow{
     position: absolute;
     bottom: 25px;
-    width: 10%;
+    width: 0%;
     height: 6px;
     left: 43%;
     background-color: #fff;
