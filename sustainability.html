@@ -15,7 +15,9 @@
                 <!--NAV-->
                 <title>DECAPOD</title>
                 <section class="logo-container">
-                    <img class="logo" src="media/logo.svg">
+                    <a href="index.html">
+                        <img class="logo" src="media/logo.svg">
+                    </a>
                     <a href="index.html" class="decapod">DECAPOD</a>
                     <a href="index.html" class="slogan" href="#index">Feeding the World Sustainably</a>
                 </section>
@@ -142,5 +144,180 @@
 </html>
 
 <style>
-    
+    .background-sustainability{
+    height: 125vh;
+    background-image: url(media/Sustainability.png);
+    background-size: cover;
+    position: static;
+    background-position: top;
+    background-repeat:no-repeat;
+}
+.title-sustainability {
+    transform: translateY(-4rem);
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 26vh;
+}
+.title-sustainability-title {
+    color: var(--backgroundgrey); 
+    text-align: center;
+    margin: 0;
+    font-size: 6rem;
+    background: -webkit-linear-gradient(45deg,#db0024, #1897cc );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+.title-sustainability-supportingtext {
+    color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    background: -webkit-linear-gradient(45deg,#db0024, #1897cc );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+}
+.obligation{
+    margin-right: auto;
+    margin-left: auto;
+    width: 65rem;
+    text-align: center;
+    transform: translateY(20rem);
+}
+.section-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(24, 151, 204, 0.4);
+    height: 270rem;
+    z-index: -224;
+}
+.section-container span{
+    position: absolute;
+    bottom: 0px;
+    background: transparent;
+    border-radius: 50%;
+ 
+    pointer-events: none;
+    box-shadow: inset 0 0 35px
+        rgba(255, 255, 255, 0.5);
+    animation: animate 4s linear infinite;
+    z-index: -1;
+}
+.section-container span::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.25) translate(-70%, -70%);
+    background:
+      radial-gradient(#ffffffda, transparent);
+    border-radius: 50%;
+    z-index: -1;
+}
+@keyframes animation {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1200%);
+        opacity: 1;
+    }
+}
+.section{
+    width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(50rem);
+}
+.section1{
+}
+.section2{
+    transform: translateY(-50rem);
+    text-align: center;
+}
+.section3{
+    transform: translateY(-45rem);
+    text-align: center;
+}
+.section4{
+    transform: translateY(-40rem);
+}
+.section4-fcr-cattle{
+    width: 45rem;
+    float: left;
+}
+.section4-text{
+    width: 20rem;
+    float: right;
+}
+.footer-sustainability{
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(295rem);
+    background-image: url(media/seafloor.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat:no-repeat;
+}
+.footer-sustainability-container{
+    margin-bottom: 3%;
+    position:absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+.footer-sustainability-container-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid: 1fr;
+    width: 100%;
+    align-items: center;
+}
+.footer-sustainability-container-text{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; 
+    grid-template-areas: ". . .";
+    width: 100%;
+}
+.footer-sustainability-decapod-container{
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+    max-width: 15rem;
+}
+.footer-sustainability-decapod-logo{
+    position: relative;
+    object-fit: contain;
+    width: 4rem;
+}
+.footer-sustainability-decapod{
+    font-family: raleway, sans-serif;
+    position: relative;
+    font-size: 2.9rem;
+    top: 0rem;
+    left: 0rem;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+}
+.footer-sustainability-decapod-slogan{
+    font-family: bree, sans-serif;
+    font-size: 1.04rem;
+    position: relative;
+    top: -0.8rem;
+    left: 0.1rem;
+    text-decoration: none;
+    margin-top: 0;
+    color: #f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+}
 </style>

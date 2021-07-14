@@ -61,24 +61,25 @@ nav a{
     position: relative;
     text-decoration: none;
     padding: 30px 0px;
-    color: #f9f9f9;
+    color: white;
     padding: 6px;
     text-shadow:  -4px 4px 3px #2b2b2b;
+    transition: transform 0.15s, text-shadow 0.15s;
 }
 nav a:after{
     content: "";
     position: absolute;
-    background-color: var(--darkblue);
+    background-color: white;
     height: 1.6px;
     width: 0;
     left: 0;
     bottom: 5px;
     transition: 0.3s;
-    
 }
 nav a:hover{
-    color:var(--darkblue);
-    text-shadow:  -1px 1px 1px #2b2b2b;
+    color: white;
+    text-shadow:  -0px 0px 0px #2b2b2b;
+    transform: translate(-3px, 1px);
 }
 nav a:hover:after {
     width:100%;
@@ -86,10 +87,113 @@ nav a:hover:after {
 .menu, .hamburger, .toggler{
     display: none;
 }
-@media (max-aspect-ratio: 3/4){
-    .title{
-        z-index: -1;
-    }
+.footer{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.footer-container{
+    margin-bottom: 3%;
+    position:absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+.footer-container-text{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; 
+    grid-template-areas: ". . .";
+    width: 100%;
+}
+.footer-decapod-container{
+    position: relative;
+    left: 0rem;
+    top: 0rem;
+    max-width: 15rem;
+}
+.footer-decapod-logo{
+    position: relative;
+    object-fit: contain;
+    width: 4rem;
+}
+.footer-decapod{
+    font-family: raleway, sans-serif;
+    position: relative;
+    font-size: 2.9rem;
+    top: 0rem;
+    left: 0rem;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+}
+.footer-decapod-slogan{
+    font-family: bree, sans-serif;
+    font-size: 1.04rem;
+    position: relative;
+    top: -0.8rem;
+    left: 0.1rem;
+    text-decoration: none;
+    margin-top: 0;
+    color: #f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+}
+/*FONTS*/
+h1 {
+    font-family: bree, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: normal;
+}
+h2 {
+    font-family: bree, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: normal;
+}
+h3{
+    font-family: raleway, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+h4 {
+    font-family: bree, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+}
+p {
+    font-family: bree, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: normal;
+}
+h5 {
+    font-family: adobe-calson-pro, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+a {
+    font-family: raleway, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: normal;
+}
+blockquote{
+    font-family: raleway, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: normal;
+}
+em{
+    font-style: italic;
+}
+@media (max-aspect-ratio: 9/16){
     .toggler{
         display: unset;
     }
@@ -224,610 +328,5 @@ nav a:hover:after {
         opacity: 1;
         transition: opacity 0.4s ease 0.4s;
     }
-}
-.footer{
-    height: 50vh;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-}
-.footer-container{
-    margin-bottom: 3%;
-    position:absolute;
-    bottom: 1rem;
-    width: 100%;
-}
-.footer-container-text{
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; 
-    grid-template-areas: ". . .";
-    width: 100%;
-}
-.footer-decapod-container{
-    position: relative;
-    left: 0rem;
-    top: 0rem;
-    max-width: 15rem;
-}
-.footer-decapod-logo{
-    position: relative;
-    object-fit: contain;
-    width: 4rem;
-}
-.footer-decapod{
-    font-family: raleway, sans-serif;
-    position: relative;
-    font-size: 2.9rem;
-    top: 0rem;
-    left: 0rem;
-    text-decoration: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    color:#f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-}
-.footer-decapod-slogan{
-    font-family: bree, sans-serif;
-    font-size: 1.04rem;
-    position: relative;
-    top: -0.8rem;
-    left: 0.1rem;
-    text-decoration: none;
-    margin-top: 0;
-    color: #f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-}
-/*FONTS*/
-h1 {
-    font-family: bree, sans-serif;
-    font-size: 4rem;
-    font-weight: 600;
-    font-style: normal;
-}
-h2 {
-    font-family: bree, sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    font-style: normal;
-}
-h3{
-    font-family: raleway, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    font-style: normal;
-}
-h4 {
-    font-family: bree, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-style: normal;
-}
-p {
-    font-family: bree, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 300;
-    font-style: italic;
-}
-h5 {
-    font-family: adobe-calson-pro, serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-style: italic;
-}
-a {
-    font-family: raleway, sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    font-style: normal;
-}
-
-/*INDEX*/
-.background{
-    height: 100vh;
-    background-image: url(../media/briksdaltop.png);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat:no-repeat;
-}
-.title {
-    transform: translateY(-4rem);
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 26vh;
-}
-.title-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5rem;
-}
-.title-title {
-    color: var(--backgroundgrey); 
-    text-align: center;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-    margin: 0;
-}
-.title-supportingtext {
-    color: #f9f9f9;
-    text-align: center;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-    margin: 0;
-}
-.about{
-    background-image: url(../media/Briksdalbottom.png);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding-bottom: 0.1rem;
-}
-.about-IMGcrab{
-    float:right;
-    width: 40%;
-    padding-top: 10%;
-}
-.about-text{
-    max-width: 60%;
-    margin-bottom: 15rem;
-    margin-top: -2.1rem;
-    margin-left: 3%;
-}
-.about-text-body {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.about-text-body-1 {
-    text-align:center;
-    margin-bottom: 0;
-}
-.about-text-body-2 {
-    text-align: center;
-    margin-top: 0.4rem;
-}
-.quotes {
-    height: 40rem;
-}
-@media (max-width:111rem){
-    .quotes{
-        height: 52rem;
-    }
-}
-.quote-1{
-    background-image: url(../media/brushstroke1.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    margin: auto;
-    max-width: 40rem;
-    max-height: 30rem;
-    text-align: center;
-    padding: 5rem;
-    padding-bottom: 10rem;
-    float: left;
-}
-.quote-2{
-    background-image: url(../media/brushstroke2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: auto;
-    max-width: 40rem;
-    text-align: center;
-    padding: 5rem;
-    float: right;
-}
-.quote-1-text{
-    width: 90%;
-    margin-left: auto;
-    margin-right:auto;
-    margin-bottom: 0;
-}
-.quote-1-text2{
-    margin-top: 0;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.quote-2-text{
-    width: 90%;
-    margin-left: auto;
-    margin-right:auto;
-    margin-bottom: 0;
-}
-.quote-2-text2{
-    margin-top: 0;
-    width: 70%;
-    margin-left: auto;
-    margin-right:auto;
-}
-.video{
-    position: relative;
-    height: 0;
-    padding-bottom: 56.25%;
-    z-index: 1;
-    margin-top: 5rem;
-}
-.video iframe{
-   position: absolute;
-   width: 80%;
-   height: 80%;
-   top: 0;
-   left: 10%;
-}
-.subscribe-top{
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 4rem;
-    text-align: center;
-    white-space: nowrap;
-    width: 22rem;
-    height:4rem;
-    transform: translateY(-8rem);
-}
-.subscribe-bot{
-    margin-left: auto;
-    margin-right:auto;
-    width: 42rem;
-    transform: translate(-3.5rem, -5rem);}
-input{
-    position:relative;
-    left: 5rem;
-    font-size: 2rem;
-    box-sizing: border-box;
-    border-radius: 2rem;
-}
-.button2{
-    text-align: center;
-    border-radius: 2rem;
-    width: 15.5rem;
-    margin-left: 0.5rem;
-    background: #f9f9f9;
-    border: 2px solid #db0024;
-    color: #db0024;
-    letter-spacing: 1px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.25s ease;
-}
-.button2:hover {
-    color:white;
-    background: var(--darkred)
-}
-.button2:active{
-    letter-spacing: 2px;
-}
-.button2:after{
-    content: "SUBSCRIBE";
-}
-.onclic {
-    width: 40px;
-    border-color: #bbbbbb;
-    border-width: 3px;
-    font-size: 0;
-    border-left-color: #1ECD97;
-    -webkit-animation: rotating 2s 0.25s
-}
-/*PRODUCTS*/
-.background-products{
-    background-color: var(--backgroundgrey);
-}
-.timeline-container{
-    position: static;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.timeline{
-    width: 100%;
-}
-.crabonplate{
-    width:80%;
-    transform: translateY(-10rem);
-}
-/*TEAM*/
-.background-team{
-    height: 200vh;
-    background-image: url(../media/janroar.png);
-    background-size: cover;
-    position: static;
-    background-position: center;
-    background-repeat:no-repeat;
-}
-.header-team-container{
-    margin-left:auto;
-    margin-right:auto;
-    width: 50%;
-    transform: translateY(12rem);
-}
-.header-team{
-    color: var(--backgroundgrey); 
-    font-size: 75px;
-    font-family: essonnes-text;
-    text-align: center;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-    margin: 0;
-}
-/*RECIPES*/
-.link{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.arrow{
-    position: absolute;
-    bottom: 25px;
-    width: 0%;
-    height: 6px;
-    left: 43%;
-    background-color: #fff;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-    animation: arrow 700ms linear infinite;
-}
-.card{
-    color:#ffffff;
-    background-size: cover;
-    padding: 10rem;
-    width: 35ch;
-    height: 35ch;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    transition: transform 500ms ease;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-}
-.card1{
-    background-image: url(../media/singaporecrab.jpg);
-}
-.card2{
-    background-image: url(../media/sushi.jpg);
-}
-.card3{
-    background-image: url(../media/avocadocrabboats.jpg);
-
-}
-.card:hover {
-    transform:scale(1.05);
-}
-.card-content{
-    width: 38rem;
-    height: 35rem;
-    background: rgba(24, 151, 204, 0.65);
-    transition: transform 500ms ease; 
-    transform: translate(-10rem, 21.5rem);
-}
-.card:hover .card-content {
-    transform: translate(-10rem, 13rem);
-}
-.card-title {
-    position: relative;
-    width: 18rem;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(0.4rem);
-    text-align: center;
-}
-.card-title::after {
-    content:"";
-    position: absolute;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-.card:hover .card-title::after {
-    transform:scaleX(1);
-}
-.card-body{
-    color: rgb(255 255 255 / 0.85);
-    margin-left:auto;
-    margin-right:auto;
-    text-align: center;
-}
-.card-recipe{
-    margin-left:auto;
-    margin-right: auto;
-    width: 80%;
-    display: grid; 
-    grid-template-columns: 1.3fr 0.7fr; 
-    grid-template-rows: 0.2fr 1.8fr; 
-    gap: 0px 10%; 
-    grid-template-areas: 
-        ". ."
-        ". ."; 
-}
-.background-recipes{
-    height: 100vh;
-    background-image: url(../media/chef.jpg);
-    background-size: cover;
-    position: static;
-    background-position: bottom;
-    background-repeat:no-repeat;
-}
-/*SUSTAINABILITY*/
-.background-sustainability{
-    height: 125vh;
-    background-image: url(../media/Sustainability.png);
-    background-size: cover;
-    position: static;
-    background-position: top;
-    background-repeat:no-repeat;
-}
-.title-sustainability {
-    transform: translateY(-4rem);
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 26vh;
-}
-.title-sustainability-title {
-    color: var(--backgroundgrey); 
-    text-align: center;
-    margin: 0;
-    font-size: 6rem;
-    background: -webkit-linear-gradient(45deg,#db0024, #1897cc );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-}
-.title-sustainability-supportingtext {
-    color: #f9f9f9;
-    text-align: center;
-    margin: 0;
-    background: -webkit-linear-gradient(45deg,#db0024, #1897cc );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.5px;
-}
-.obligation{
-    margin-right: auto;
-    margin-left: auto;
-    width: 65rem;
-    text-align: center;
-    transform: translateY(20rem);
-}
-.section-container{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background: rgba(24, 151, 204, 0.4);
-    height: 270rem;
-    z-index: -224;
-}
-.section-container span{
-    position: absolute;
-    bottom: 0px;
-    background: transparent;
-    border-radius: 50%;
- 
-    pointer-events: none;
-    box-shadow: inset 0 0 35px
-        rgba(255, 255, 255, 0.5);
-    animation: animate 4s linear infinite;
-    z-index: -1;
-}
-.section-container span::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: scale(0.25) translate(-70%, -70%);
-    background:
-      radial-gradient(#ffffffda, transparent);
-    border-radius: 50%;
-    z-index: -1;
-}
-@keyframes animation {
-    0% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-1200%);
-        opacity: 1;
-    }
-}
-.section{
-    width: 65rem;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(50rem);
-}
-.section1{
-}
-.section2{
-    transform: translateY(-50rem);
-    text-align: center;
-}
-.section3{
-    transform: translateY(-45rem);
-    text-align: center;
-}
-.section4{
-    transform: translateY(-40rem);
-}
-.section4-fcr-cattle{
-    width: 45rem;
-    float: left;
-}
-.section4-text{
-    width: 20rem;
-    float: right;
-}
-.section4-text-background{
-    background-image: url(media/brushtroke1.png);
-}
-.footer-sustainability{
-    height: 60vh;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    transform: translateY(295rem);
-    background-image: url(../media/seafloor.png);
-    background-size: cover;
-    background-position: top;
-    background-repeat:no-repeat;
-}
-.footer-sustainability-container{
-    margin-bottom: 3%;
-    position:absolute;
-    bottom: 1rem;
-    width: 100%;
-}
-.footer-sustainability-container-images{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid: 1fr;
-    width: 100%;
-    align-items: center;
-}
-.footer-sustainability-container-text{
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; 
-    grid-template-areas: ". . .";
-    width: 100%;
-}
-.footer-sustainability-decapod-container{
-    position: relative;
-    left: 0rem;
-    top: 0rem;
-    max-width: 15rem;
-}
-.footer-sustainability-decapod-logo{
-    position: relative;
-    object-fit: contain;
-    width: 4rem;
-}
-.footer-sustainability-decapod{
-    font-family: raleway, sans-serif;
-    position: relative;
-    font-size: 2.9rem;
-    top: 0rem;
-    left: 0rem;
-    text-decoration: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    color:#f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-}
-.footer-sustainability-decapod-slogan{
-    font-family: bree, sans-serif;
-    font-size: 1.04rem;
-    position: relative;
-    top: -0.8rem;
-    left: 0.1rem;
-    text-decoration: none;
-    margin-top: 0;
-    color: #f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
 }
 

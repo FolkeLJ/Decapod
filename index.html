@@ -14,7 +14,9 @@
                 <!--NAV-->
                 <title>DECAPOD</title>
                 <section class="logo-container">
-                    <img class="logo" src="media/logo.svg">
+                    <a href="index.html">
+                        <img class="logo" src="media/logo.svg">
+                    <a>
                     <a href="index.html" class="decapod">DECAPOD</a>
                     <a href="index.html" class="slogan" href="#index">Feeding the World Sustainably</a>
                 </section>
@@ -51,13 +53,31 @@
                     <h1 class="title-title">Feeding the World Sustainably</h1>
                     <h2 class="title-supportingtext">Pure Norwegian Live Crab</h2>
                 </section>
+                <section class="scroll">
+                    <span class="scroll-icon">
+                        <span class="scroll-icon-dot">
+                        </span>
+                    </span>
+                </section>
+                <script>
+                    const checkpoint = 450;
+                        window.addEventListener("scroll", () => {
+                        const currentScroll = window.pageYOffset;
+                        if (currentScroll <= checkpoint) {
+                            opacity = 1 - currentScroll / checkpoint;
+                        } else {
+                            opacity = 0;
+                        }
+                        document.querySelector(".scroll").style.opacity = opacity;
+                        });
+                </script>
             </section> 
         </head>
 
         <!--ABOUT-->
         <section class="about">
             <section class="about-IMGcrab">
-                <img src="media/Crab.png" style="float:right; width:100%;">
+                <img src="media/halfcrab.png" style="float:right; width:100%;">
             </section>
             <section class="about-text">
                 <div class="about-text-body">
@@ -79,14 +99,14 @@
             </section>
         </section>
         <!--Quotes-->
-        <section class="quotes">
-            <div class="quote-1">
-                <h2 class="quote-1-text">"We've been serving crabs for 35 years and have never seen a product like this"</h2>
-                <p class="quote-1-text2">Huwei-Ming Yang <br> Executive Chef at The Ministry of Crab</p>
+        <section class="blockquote-wrapper">
+            <div class="blockquote1">
+                <blockquote cite=""><span style="color: black;">We have been</span> serving crabs <span style="color: black;">for</span> 35 years<span style="color: black;"> and have </span> never seen <span style="color: black;">a</span> product like this<span style="color: black;">.</span></blockquote>
+                <p>—Huwei-Ming Yang <br><em>Executive Chef at The Ministry of Crab</em></p>
             </div>
-            <div class="quote-2">
-                <h2 class="quote-2-text">"In terms of health and environmental sustainability Decapod's crab stands unmatched"</h2>
-                <p class="quote-2-text2">Asgeir Torvaldson <br> Researcher at the norwegian Institute for Marine research and Professor at UIB</p>
+            <div class="blockquote2">
+                <blockquote cite=""><span style="color: black;">In terms of</span> health and environmental sustainability<span style="color: black;"> Decapod crab stands</span> unmatched<span style="color: black;">.</span></blockquote>
+                <p>—Asgeir Torvaldson <br><em>Researcher at the norwegian Institute for Marine research and Professor at UIB</em></p>
             </div>
         </section>
         <!--VIDEO-->
@@ -131,3 +151,327 @@
         </section>
     </body>
 </html>
+
+<style>
+    .background{
+    height: 100vh;
+    background-image: url(media/briksdaltop.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat:no-repeat;
+    }
+    .title {
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .title-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 5rem;
+    }
+    .title-title {
+        color: var(--backgroundgrey); 
+        text-align: center;
+        text-shadow:  -4px 4px 3px #2b2b2b;
+        margin: 0;
+    }
+    .title-supportingtext {
+        color: #f9f9f9;
+        text-align: center;
+        text-shadow:  -4px 4px 3px #2b2b2b;
+        margin: 0;
+    }
+    .about{
+        background-image: url(media/Briksdalbottom.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        padding-bottom: 0.1rem;
+    }
+    .about-IMGcrab{
+        float:right;
+        width: 30%;
+    }
+    .about-text{
+        max-width: 60%;
+        margin-bottom: 15rem;
+        margin-top: -2.1rem;
+        margin-left: 3%;
+    }
+    .about-text-body {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-text-body-1 {
+        text-align:center;
+        margin-bottom: 0;
+    }
+    .about-text-body-2 {
+        text-align: center;
+        margin-top: 0.4rem;
+    }
+    .blockquote-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 0 20px;
+    margin-top: -7rem;
+    }
+    .blockquote1, .blockquote2 {
+        position: relative;
+        max-width: 620px;
+        margin: 0 auto;
+        align-self: center;
+        margin-top: 0;
+    }
+    .blockquote2{
+        transform: translatey(15rem);
+        margin-left: 5rem;
+    }
+    .blockquote1 blockquote, .blockquote2 blockquote {
+        position: relative;
+        color: var(--lightblue);
+        font-size: 2.8rem;
+        font-weight: normal;
+        line-height: 1;
+        margin: 0;
+        border: solid 4px;
+        border-radius:20px;
+        padding: 25px;
+    }
+    .blockquote1 blockquote:after {
+        content:"";
+        position: absolute;
+        border: 4px solid var(--lightblue);
+        border-radius: 0px 50px 0 0;
+        width: 60px;
+        height: 60px;
+        bottom: -64px;
+        left: 50px;
+        border-bottom: none;
+        border-left: none;
+        z-index: 3; 
+    }
+    .blockquote2 blockquote:after{
+        content:"";
+        position: absolute;
+        border: 4px solid var(--lightblue);
+        border-radius: 50px 0px 0px 0px;
+        width: 60px;
+        height: 60px;
+        bottom: -64px;
+        right: 50px;
+        border-bottom: none;
+        border-right: none;
+        z-index: 3; 
+    }
+    .blockquote1 blockquote:before {
+        content:"";
+        position: absolute;
+        width: 80px;
+        border: 6px solid #f9f9f9;
+        bottom: -4px;
+        left: 50px;
+        z-index: 2;
+    }
+    .blockquote2 blockquote:before{
+        content:"";
+        position: absolute;
+        width: 80px;
+        border: 6px solid #f9f9f9;
+        bottom: -4px;
+        right: 50px;
+        z-index: 2;
+    }
+    @media all and (min-width: 600px) {
+        .blockquote1 blockquote, .blockquote2 blockquote {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+    }
+    .blockquote1 p {
+    position: relative;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-left:150px;
+    padding-left:12px;
+    }
+    .blockquote2 p {
+    position: relative;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 1;
+    margin-right:150px;
+    padding-left:12px;
+    text-align: right;
+    }
+    .blockquote1 p:first-letter, .blockquote2 p:first-letter {
+    margin-left:-12px;
+    }
+    .video{
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%;
+        z-index: 1;
+        margin-top: 5rem;
+    }
+    .video iframe{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 10%;
+    }
+    .subscribe-top{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4rem;
+        text-align: center;
+        white-space: nowrap;
+        width: 22rem;
+        height:4rem;
+        transform: translateY(-8rem);
+    }
+    .subscribe-bot{
+        margin-left: auto;
+        margin-right:auto;
+        width: 42rem;
+        transform: translate(-3.5rem, -5rem);}
+    input{
+        position:relative;
+        left: 5rem;
+        font-size: 2rem;
+        box-sizing: border-box;
+        border-radius: 2rem;
+    }
+    .button2{
+        text-align: center;
+        border-radius: 2rem;
+        width: 15.5rem;
+        margin-left: 0.5rem;
+        background: #f9f9f9;
+        border: 2px solid #db0024;
+        color: #db0024;
+        letter-spacing: 1px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+    .button2:hover {
+        color:white;
+        background: var(--darkred)
+    }
+    .button2:active{
+        letter-spacing: 2px;
+    }
+    .button2:after{
+        content: "SUBSCRIBE";
+    }
+    .onclic {
+        width: 40px;
+        border-color: #bbbbbb;
+        border-width: 3px;
+        font-size: 0;
+        border-left-color: #1ECD97;
+        -webkit-animation: rotating 2s 0.25s
+    }
+    @keyframes scroll {
+        0%   { transform: translateY(0); opacity: 1; }
+        25%  { opacity: 1; }
+        75%  { transform: translateY(.75em); opacity: 0; }
+        100% { transform: translateY(0); opacity: 0; }
+    }
+    
+    .scroll {
+      position: absolute;
+      left: 50%;
+      bottom: 2rem;
+      transform: translateX(-50%);
+    }
+    .scroll-icon {
+        display: block;
+        position: relative;
+        height: 3em;
+        width: 1.5em;
+        border: .25em solid #fff;
+        border-radius: 1em;
+    }
+    .scroll-icon-dot {
+        display: block;
+        position: absolute;
+        left: 50%;
+        background: #fff;
+        height: .5em;
+        width: .5em;
+        top: .6em;
+        margin-left: -.25em;
+        border-radius: 50%;
+        transform-origin: top center;
+        backface-visibility: hidden;
+        animation: scroll 2s ease-out infinite;
+    }
+    @media (max-aspect-ratio:9/16){
+        .about-IMGcrab{
+            display: none;
+            width: 0;
+        }
+        .about-text{
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        .about-text-body{
+            max-width: 80%;
+        }
+        .quote-1, .quote-2{
+            max-width: 75%;
+            float: none;
+            background-image: none;
+            content: "";
+            border-radius: 5rem;
+            background-color: var(--lightblue);
+            padding-bottom: 2rem;
+        }
+        .quote-1{
+            margin-bottom: 2rem;
+        }
+        .quote-2{
+            margin-bottom: 5rem;
+        }
+        .quote-1-text, .quote-2-text{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        }
+        .quote-1-text2, .quote-2-text2{
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .video{
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+        .video iframe{
+            position: absolute;
+            width: 88%;
+            height: 88%;
+            top: 0;
+            left: 6%;
+        }
+    }
+</style>
