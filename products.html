@@ -99,6 +99,24 @@
                     }, false);
                     </script>                         
                 </section>
+                <section class="scroll">
+                    <span class="scroll-icon">
+                        <span class="scroll-icon-dot">
+                        </span>
+                    </span>
+                </section>
+                <script>
+                    const checkpoint = 450;
+                        window.addEventListener("scroll", () => {
+                        const currentScroll = window.pageYOffset;
+                        if (currentScroll <= checkpoint) {
+                            opacity = 1 - currentScroll / checkpoint;
+                        } else {
+                            opacity = 0;
+                        }
+                        document.querySelector(".scroll").style.opacity = opacity;
+                        });
+                </script>
                 <section class="crabonplate-container">
                     <img class="crabonplate" src="media/crabonplate.png">
                 </section>
@@ -164,6 +182,40 @@
         to {
             fill: white;
         }
+    }
+    .scroll {
+      position: absolute;
+      left: 50%;
+      bottom: 2rem;
+      transform: translateX(-50%);
+    }
+    .scroll-icon {
+        display: block;
+        position: relative;
+        height: 3em;
+        width: 1.5em;
+        border: .25em solid #fff;
+        border-radius: 1em;
+    }
+    .scroll-icon-dot {
+        display: block;
+        position: absolute;
+        left: 50%;
+        background: #fff;
+        height: .5em;
+        width: .5em;
+        top: .6em;
+        margin-left: -.25em;
+        border-radius: 50%;
+        transform-origin: top center;
+        backface-visibility: hidden;
+        animation: scroll 2s ease-out infinite;
+    }
+    @keyframes scroll {
+        0%   { transform: translateY(0); opacity: 1; }
+        25%  { opacity: 1; }
+        75%  { transform: translateY(.75em); opacity: 0; }
+        100% { transform: translateY(0); opacity: 0; }
     }
     .crabonplate-container {
          display: flex;
