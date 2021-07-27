@@ -237,6 +237,12 @@
         backface-visibility: hidden;
         animation: scroll 2s ease-out infinite;
     }
+    @keyframes scroll {
+        0%   { transform: translateY(0); opacity: 1; }
+        25%  { opacity: 1; }
+        75%  { transform: translateY(.75em); opacity: 0; }
+        100% { transform: translateY(0); opacity: 0; }
+    }
     .about {
         height: 30rem;
         background: linear-gradient(#ffca82, #f9f9f9);
