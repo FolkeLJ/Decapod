@@ -156,6 +156,14 @@
 </html>
 
 <style>
+ .background-recipes{
+    height: 100vh;
+    background-image: url(media/chef.jpg);
+    background-size: cover;
+    position: static;
+    background-position: bottom;
+    background-repeat:no-repeat;
+}
  .title {
         position: absolute;
         margin: 0;
@@ -250,13 +258,15 @@
 }
 .card1{
     background-image: url(media/singaporecrab.jpg);
+    transform: translateY(10rem);
 }
 .card2{
     background-image: url(media/sushi.jpg);
+    transform: translateY(10rem);
 }
 .card3{
     background-image: url(media/avocadocrabboats.jpg);
-
+    transform: translateY(10rem);
 }
 .card:hover {
     transform:scale(1.05);
@@ -308,12 +318,5 @@
         ". ."
         ". ."; 
 }
-.background-recipes{
-    height: 100vh;
-    background-image: url(media/chef.jpg);
-    background-size: cover;
-    position: static;
-    background-position: bottom;
-    background-repeat:no-repeat;
-}
+
 </style>
