@@ -27,7 +27,7 @@
                         <a href="products.html">PRODUCTS</a>
                         <a href="team.html">OUR TEAM</a>
                         <a href="recipes.html">RECIPES</a>
-                        <a href="partners.html">PARTNERS</a>
+                       
                         <a href="sustainability.html">SUSTAINABILITY</a>
                     </nav>
                 </section>
@@ -42,7 +42,7 @@
                                     <li><a href="products.html">PRODUCTS</a></li>
                                     <li><a href="team.html">OUR TEAM</a></li>
                                     <li><a href="recipes.html">RECIPES</a></li>
-                                    <li><a href="partners.html">PARTNERS</a></li>
+                                    
                                     <li><a href="sustainability.html">SUSTAINABILITY</a></li>
                                 </ul>
                             </div>
@@ -53,6 +53,24 @@
                     <h1 class="title-sustainability-title">Sustainability</h1>
                     <h2 class="title-sustainability-supportingtext">Maximum taste. Minimum Waste.</h2>
                 </section>
+                <section class="scroll">
+                    <span class="scroll-icon">
+                        <span class="scroll-icon-dot">
+                        </span>
+                    </span>
+                </section>
+                <script>
+                    const checkpoint = 450;
+                        window.addEventListener("scroll", () => {
+                        const currentScroll = window.pageYOffset;
+                        if (currentScroll <= checkpoint) {
+                            opacity = 1 - currentScroll / checkpoint;
+                        } else {
+                            opacity = 0;
+                        }
+                        document.querySelector(".scroll").style.opacity = opacity;
+                        });
+                </script>
                 <section class="obligation">
                     <h1 style="color:#104364; margin-bottom: 1rem; margin-top: 0;">Our Obligation to Nature</h1>
                     <p style="font-size: 2rem; margin-top: 0;">We reduce the resource burden to our planet and foster a sustainable future with record low Co2e emissions and efficient feeding, while maintaining the highest standards of animal well-being.</p>
@@ -177,6 +195,40 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0.5px;
 }
+    .scroll {
+      position: absolute;
+      left: 50%;
+      bottom: 2rem;
+      transform: translateX(-50%);
+    }
+    .scroll-icon {
+        display: block;
+        position: relative;
+        height: 3em;
+        width: 1.5em;
+        border: .25em solid #fff;
+        border-radius: 1em;
+    }
+    .scroll-icon-dot {
+        display: block;
+        position: absolute;
+        left: 50%;
+        background: #fff;
+        height: .5em;
+        width: .5em;
+        top: .6em;
+        margin-left: -.25em;
+        border-radius: 50%;
+        transform-origin: top center;
+        backface-visibility: hidden;
+        animation: scroll 2s ease-out infinite;
+    }
+    @keyframes scroll {
+        0%   { transform: translateY(0); opacity: 1; }
+        25%  { opacity: 1; }
+        75%  { transform: translateY(.75em); opacity: 0; }
+        100% { transform: translateY(0); opacity: 0; }
+    }
 .obligation{
     margin-right: auto;
     margin-left: auto;
