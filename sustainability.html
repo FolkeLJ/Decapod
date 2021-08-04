@@ -93,93 +93,94 @@
                         document.querySelector(".scroll").style.opacity = opacity;
                         });
                 </script>
+                <div class="spacer"></div>
                 <section class="obligation">
                     <h1 style="color:#f9f9f9; margin-bottom: 1rem; margin-top: 0;">Our Obligation to Nature</h1>
                     <p style="font-size: 2rem; margin-top: 0;">We reduce the resource burden to our planet and foster a sustainable future with record low Co2e emissions and efficient feeding, while maintaining the highest standards of animal well-being.</p>
                 </section>
             </section>
+            <section class="section-container">
+                <section class="section">
+                    <section class="section1">
+                    </section>
+                    <section class="section2">
+                        <h1 style="margin-top: 10rem; margin-bottom: 2rem; z-index: 2; color:#f9f9f9" >CO<sub>2</sub>e Emissions</h1>
+                        <p style="font-size: 2rem;">We measure environmental burden on a Co2 equivalent basis. This includes other greenhouse gases such as methane and nitrous oxide and is therefore a more comprehensive measure of climate impact.</p>
+                        <img src="media/Co2e.png" style="width: 100%; margin-bottom: 2rem; margin-top: 2rem;">
+                        <p style="font-size: 2rem; ">Decapod crab has by far the lowest carbon footprint of any farmed meats — beating beef fifteenfold and chicken fivefold. Even our closest competitor, salmon, still has 67% higher emissions.</p>
+                    </section>
+                    <section class=section3>
+                        <h1 style="color: #f9f9f9; margin-bottom: 0;" >Feed Conversion Ratio </h1>
+                        <p style="font-size: 2rem;">Feeding the world sustainability requires efficient feeding. By working to reduce the amount of feed required to produce 1 kilogram of edible meat, we are saving our planet's scarce resources.</p>
+                    </section>
+                    <section class="section4">
+                        <img src="media/cow.png" style="width:65rem; margin-bottom: 0;">
+                        <p style="font-size: 2rem; transform: translateY(-6.4rem); margin-left: 7rem; margin-bottom: 0;">Twelve kilos of feed goes into every kilo of beef</p>
+                        <img src="media/chicken.png" style="width: 65rem; margin-bottom: 4.5rem;">
+                        <p style="font-size: 2rem; transform: translateY(-6rem); margin-left: 7rem; margin-bottom: 0;">Three kilos of feed goes into every kilo of chicken</p>
+                        <img src="media/fish.png" style="width: 65rem; margin-bottom: 4.5rem;">
+                        <p style="font-size: 2rem; transform: translateY(-6rem); margin-left: 7rem; margin-bottom: 0;">One and a half kilos of feed goes into every kilo of salmon</p>
+                        <img src="media/Crab3.png" style="width: 65rem; margin-bottom: 4.5rem;">
+                        <p style="font-size: 2rem; transform: translateY(-6rem); margin-left: 7rem; margin-bottom: 0;">Just over one kilo feed goes into every kilo of Decapod crab</p>
+                        <p style="font-size: 2rem; text-align: center;">If every household switched out one meat meal a week with crab, then global carbon emissions would be reduced by a bazillion tonnes annually.</p>
+                    </section>
+                    <script type="text/javascript">
+                        function createBubble() {
+                            const section =
+                                document.querySelector(".section-container");
+                            const createElement =
+                                document.createElement("span");
+                            var size = Math.random() * 60;
+            
+                            createElement.style.animation =
+                            "animation 6s linear infinite";
+                            createElement.style.width = 35 + size + "px";
+                            createElement.style.height = 35 + size + "px";
+                            createElement.style.left =
+                            Math.random() * innerWidth + "px";
+                            section.appendChild(createElement);
+            
+                            setTimeout(() => {
+                                createElement.remove();
+                            }, 6000);
+                        }
+                        setInterval(createBubble, 850);
+                    </script>
+                </section>
+            </section>
+            <!--FOOTER-->
+            <section class="footer-sustainability">
+                <section class="footer-sustainability-container">
+                    <section class="footer-sustainability-container-images">
+                        <img src="media/Coral.png" style="width: 80%;">
+                        <img src="media/Seaweed.png" style="width: 50%;">
+                        <img src="media/Crab2.png" style="width: 35%;">
+                        <img src="media/Seaweed2.png" style="width: 50%;">
+                        <img src="media/Croral2.png" style="width: 80%;">
+                    </section>
+                    <section class="footer-sustainability-container-text" >
+                        <div style="display:flex; align-items: center; justify-content: center; transform: translateY(-0.6rem);">
+                            <div class="footer-decapod-container">
+                                <img class="footer-decapod-logo" src="media/logo.svg" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
+                                <a class="footer-decapod" href="index.html" style="font-family: raleway, sans-serif; font-size: 2.9rem; text-decoration: none;">DECAPOD</a>
+                                <a class="footer-decapod-slogan" href="index.html">Feeding the World Sustainably</a>
+                            </div>
+                        </div>
+                        <div style="display:flex; align-items: center; justify-content: center; transform: translateY(1.7rem);">
+                            <div>
+                                <a style="margin-bottom: 0;font-family: bree, sans-serif; font-size: 1.2rem;text-decoration: none; color: black" href="https://www.google.com/maps/search/Staum%C3%B8yvegen+28B,+5544+V%C3%A5lev%C3%A5g/@59.6983696,5.4654076,15z/data=!3m1!4b1">Staumøyvegen 28B, 5544 Vålevåg</a><br>
+                                <a href="tel:+47 90770976" style="font-family: bree, sans-serif; font-size: 1.2rem;text-decoration: none; color: black;margin-top: 0; margin-bottom: 0;">Phone: (+47) 90770976</h3><br>
+                                <a style="font-family: bree, sans-serif; font-size: 1.2rem; margin-top: 0;text-decoration: none; color: black;" href="mailto:inquiries@ms-solutions.no">Email: Inquiries@ms-solutions.no</a>
+                            </div>
+                        </div>
+                        <div style="display:flex; align-items: center; justify-content: center; transform: translateY(0rem);">
+                            <div>
+                                <h3 style="font-weight: bold; font-family: bree;">© DECAPOD AS</h3>
+                            </div>
+                    </section>
+                </section>
+            </section>
         </head>
-        <section class="section-container">
-            <section class="section">
-                <section class="section1">
-                </section>
-                <section class="section2">
-                    <h1 style="margin-top: 10rem; margin-bottom: 2rem; z-index: 2; color:#f9f9f9" >CO<sub>2</sub>e Emissions</h1>
-                    <p style="font-size: 2rem;">We measure environmental burden on a Co2 equivalent basis. This includes other greenhouse gases such as methane and nitrous oxide and is therefore a more comprehensive measure of climate impact.</p>
-                    <img src="media/Co2e.png" style="width: 100%; margin-bottom: 2rem; margin-top: 2rem;">
-                    <p style="font-size: 2rem; ">Decapod crab has by far the lowest carbon footprint of any farmed meats — beating beef fifteenfold and chicken fivefold. Even our closest competitor, salmon, still has 67% higher emissions.</p>
-                </section>
-                <section class=section3>
-                    <h1 style="color: #f9f9f9; margin-bottom: 0;" >Feed Conversion Ratio </h1>
-                    <p style="font-size: 2rem;">Feeding the world sustainability requires efficient feeding. By working to reduce the amount of feed required to produce 1 kilogram of edible meat, we are saving our planet's scarce resources.</p>
-                </section>
-                <section class="section4">
-                    <img src="media/cow.png" style="width:65rem; margin-bottom: 0;">
-                    <p style="font-size: 2rem; transform: translateY(-6.4rem); margin-left: 7rem; margin-bottom: 0;">Twelve kilos of feed goes into every kilo of beef</p>
-                    <img src="media/chicken.png" style="width: 65rem; margin-bottom: 4.5rem;">
-                    <p style="font-size: 2rem; transform: translateY(-6rem); margin-left: 7rem; margin-bottom: 0;">Three kilos of feed goes into every kilo of chicken</p>
-                    <img src="media/fish.png" style="width: 65rem; margin-bottom: 4.5rem;">
-                    <p style="font-size: 2rem; transform: translateY(-6rem); margin-left: 7rem; margin-bottom: 0;">One and a half kilos of feed goes into every kilo of salmon</p>
-                    <img src="media/Crab3.png" style="width: 65rem; margin-bottom: 4.5rem;">
-                    <p style="font-size: 2rem; transform: translateY(-6rem); margin-left: 7rem; margin-bottom: 0;">Just over one kilo feed goes into every kilo of Decapod crab</p>
-                    <p style="font-size: 2rem; text-align: center;">If every household switched out one meat meal a week with crab, then global carbon emissions would be reduced by a bazillion tonnes annually.</p>
-                </section>
-                <script type="text/javascript">
-                    function createBubble() {
-                        const section =
-                            document.querySelector(".section-container");
-                        const createElement =
-                            document.createElement("span");
-                        var size = Math.random() * 60;
-        
-                        createElement.style.animation =
-                        "animation 6s linear infinite";
-                        createElement.style.width = 35 + size + "px";
-                        createElement.style.height = 35 + size + "px";
-                        createElement.style.left =
-                        Math.random() * innerWidth + "px";
-                        section.appendChild(createElement);
-        
-                        setTimeout(() => {
-                            createElement.remove();
-                        }, 6000);
-                    }
-                    setInterval(createBubble, 850);
-                </script>
-            </section>
-        </section>
-        <!--FOOTER-->
-        <section class="footer-sustainability">
-            <section class="footer-sustainability-container">
-                <section class="footer-sustainability-container-images">
-                    <img src="media/Coral.png" style="width: 80%;">
-                    <img src="media/Seaweed.png" style="width: 50%;">
-                    <img src="media/Crab2.png" style="width: 35%;">
-                    <img src="media/Seaweed2.png" style="width: 50%;">
-                    <img src="media/Croral2.png" style="width: 80%;">
-                </section>
-                <section class="footer-sustainability-container-text" >
-                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(-0.6rem);">
-                        <div class="footer-decapod-container">
-                            <img class="footer-decapod-logo" src="media/logo.svg" style="position:relative; left: -4.5rem; top:4.3rem;width:4rem;height:4rem;">
-                            <a class="footer-decapod" href="index.html" style="font-family: raleway, sans-serif; font-size: 2.9rem; text-decoration: none;">DECAPOD</a>
-                            <a class="footer-decapod-slogan" href="index.html">Feeding the World Sustainably</a>
-                        </div>
-                    </div>
-                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(1.7rem);">
-                        <div>
-                            <a style="margin-bottom: 0;font-family: bree, sans-serif; font-size: 1.2rem;text-decoration: none; color: black" href="https://www.google.com/maps/search/Staum%C3%B8yvegen+28B,+5544+V%C3%A5lev%C3%A5g/@59.6983696,5.4654076,15z/data=!3m1!4b1">Staumøyvegen 28B, 5544 Vålevåg</a><br>
-                            <a href="tel:+47 90770976" style="font-family: bree, sans-serif; font-size: 1.2rem;text-decoration: none; color: black;margin-top: 0; margin-bottom: 0;">Phone: (+47) 90770976</h3><br>
-                            <a style="font-family: bree, sans-serif; font-size: 1.2rem; margin-top: 0;text-decoration: none; color: black;" href="mailto:inquiries@ms-solutions.no">Email: Inquiries@ms-solutions.no</a>
-                        </div>
-                    </div>
-                    <div style="display:flex; align-items: center; justify-content: center; transform: translateY(0rem);">
-                        <div>
-                            <h3 style="font-weight: bold; font-family: bree;">© DECAPOD AS</h3>
-                        </div>
-                </section>
-            </section>
-        </section>
     </body>
 </html>
 
@@ -326,22 +327,24 @@
         75%  { transform: translateY(.75em); opacity: 0; }
         100% { transform: translateY(0); opacity: 0; }
     }
+    .spacer{
+        height:60rem;
+    }
     .obligation{
         margin-right: auto;
         margin-left: auto;
         width: 65rem;
         text-align: center;
-        transform: translateY(60rem);
         background-color: transparent;
     }
     .section-container{
         position: relative;
         width: 100%;
-        overflow: hidden;
         background-color: transparent; 
-        height: 270rem;
+        height: 240rem;
         z-index: -224;
-        transform: translateY(55rem);
+        padding: 0;
+        margin: 0;
     }
     .section-container span{
         position: absolute;
@@ -382,20 +385,16 @@
         width: 65rem;
         margin-left: auto;
         margin-right: auto;
-        transform: translateY(50rem);
     }
     .section1{
     }
     .section2{
-        transform: translateY(-50rem);
         text-align: center;
     }
     .section3{
-        transform: translateY(-45rem);
         text-align: center;
     }
     .section4{
-        transform: translateY(-40rem);
     }
     .section4-fcr-cattle{
         width: 45rem;
@@ -410,19 +409,21 @@
         width: 100%;
         position: absolute;
         bottom: 0;
-        transform: translateY(280rem);
+        transform: translateY(285rem);
         background-image: url(media/seafloor.png);
         background-size: cover;
         background-position: top;
         background-repeat:no-repeat;
     }
     .footer-sustainability-container{
+        background: transparent;
         margin-bottom: 3%;
         position:absolute;
         bottom: 1rem;
         width: 100%;
     }
     .footer-sustainability-container-images{
+        background: transparent;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid: 1fr;
