@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <!-- DOCUMENT FORMATTING-->
-<html lang="en" class="parallax-window" data-natural-height="10" data-parallax="scroll" data-position="top" data-z-index="-250" data-image-src="media/Sustainability2.png">
+<html lang="en" class="parallax-window" data-speed="0.2" data-natural-height="10" data-parallax="scroll" data-position="top" data-z-index="-250" data-image-src="media/Sustainability2.png">
     <!--META-->
     <meta charset="uft-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
@@ -94,7 +94,7 @@
                         });
                 </script>
                 <section class="obligation">
-                    <h1 style="color:#104364; margin-bottom: 1rem; margin-top: 0;">Our Obligation to Nature</h1>
+                    <h1 style="color:#f9f9f9; margin-bottom: 1rem; margin-top: 0;">Our Obligation to Nature</h1>
                     <p style="font-size: 2rem; margin-top: 0;">We reduce the resource burden to our planet and foster a sustainable future with record low Co2e emissions and efficient feeding, while maintaining the highest standards of animal well-being.</p>
                 </section>
             </section>
@@ -104,13 +104,13 @@
                 <section class="section1">
                 </section>
                 <section class="section2">
-                    <h1 style="margin-top: 10rem; margin-bottom: 2rem; z-index: 2; color:#104364" >CO<sub>2</sub>e Emissions</h1>
+                    <h1 style="margin-top: 10rem; margin-bottom: 2rem; z-index: 2; color:#f9f9f9" >CO<sub>2</sub>e Emissions</h1>
                     <p style="font-size: 2rem;">We measure environmental burden on a Co2 equivalent basis. This includes other greenhouse gases such as methane and nitrous oxide and is therefore a more comprehensive measure of climate impact.</p>
                     <img src="media/Co2e.png" style="width: 100%; margin-bottom: 2rem; margin-top: 2rem;">
                     <p style="font-size: 2rem; ">Decapod crab has by far the lowest carbon footprint of any farmed meats — beating beef fifteenfold and chicken fivefold. Even our closest competitor, salmon, still has 67% higher emissions.</p>
                 </section>
                 <section class=section3>
-                    <h1 style="color: #104364; margin-bottom: 0;" >Feed Conversion Ratio </h1>
+                    <h1 style="color: #f9f9f9; margin-bottom: 0;" >Feed Conversion Ratio </h1>
                     <p style="font-size: 2rem;">Feeding the world sustainability requires efficient feeding. By working to reduce the amount of feed required to produce 1 kilogram of edible meat, we are saving our planet's scarce resources.</p>
                 </section>
                 <section class="section4">
@@ -184,6 +184,78 @@
 </html>
 
 <style>
+    .logo {
+    position: fixed;
+    object-fit: contain;
+    width: 4rem;
+    z-index: 5;
+}
+    .decapod {
+    font-family: raleway, sans-serif;
+    position: fixed;
+    font-size: 2.9rem;
+    top: 0.5rem;
+    left: 5.8rem;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+    -webkit-text-stroke-color: black;
+    z-index: 5;
+}
+.slogan {
+    font-family: bree, sans-serif;
+    font-size: 1.04rem;
+    position: fixed;
+    top: 3.3rem;
+    left: 5.8rem;
+    text-decoration: none;
+    margin-top: 0;
+    color: #f9f9f9;
+    text-shadow:  -4px 4px 3px #2b2b2b;
+    z-index: 5;
+}
+    .nav-container{
+    position: fixed;
+    top: 2rem;
+    left: 20rem;
+    width: 80vw;
+    max-width: 50rem;
+    z-index: 5;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+    nav a{
+        position: relative;
+        text-decoration: none;
+        padding: 30px 0px;
+        color: white;
+        padding: 6px;
+        text-shadow:  -4px 4px 3px #2b2b2b;
+        transition: transform 0.15s, text-shadow 0.15s;
+    }
+    nav a:after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        height: 1.6px;
+        width: 0;
+        left: 0;
+        bottom: 5px;
+        transition: 0.3s;
+    }
+    nav a:hover{
+        color: white;
+        text-shadow:  -0px 0px 0px #2b2b2b;
+        transform: translate(-3px, 1px);
+    }
+    nav a:hover:after {
+        width:100%;
+    }
     .background-sustainability{
     height: 125vh;
     position: static;
@@ -259,7 +331,7 @@
         margin-left: auto;
         width: 65rem;
         text-align: center;
-        transform: translateY(50rem);
+        transform: translateY(60rem);
         background-color: transparent;
     }
     .section-container{
@@ -269,7 +341,7 @@
         background-color: transparent; 
         height: 270rem;
         z-index: -224;
-        transform: translateY(45rem);
+        transform: translateY(55rem);
     }
     .section-container span{
         position: absolute;
@@ -338,7 +410,7 @@
         width: 100%;
         position: absolute;
         bottom: 0;
-        transform: translateY(260rem);
+        transform: translateY(280rem);
         background-image: url(media/seafloor.png);
         background-size: cover;
         background-position: top;
