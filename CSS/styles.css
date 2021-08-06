@@ -20,6 +20,7 @@ body {
     position: relative;
     object-fit: contain;
     width: 4rem;
+    top: -0.5rem;
 }
 .decapod {
     font-family: raleway, sans-serif;
@@ -61,7 +62,7 @@ nav a{
     position: relative;
     text-decoration: none;
     padding: 30px 0px;
-    color: white;
+    color: #f9f9f9;
     padding: 6px;
     text-shadow:  -4px 4px 3px #2b2b2b;
     transition: transform 0.15s, text-shadow 0.15s;
@@ -69,7 +70,7 @@ nav a{
 nav a:after{
     content: "";
     position: absolute;
-    background-color: white;
+    background-color: #f9f9f9;
     height: 1.6px;
     width: 0;
     left: 0;
@@ -77,7 +78,7 @@ nav a:after{
     transition: 0.3s;
 }
 nav a:hover{
-    color: white;
+    color: #f9f9f9;
     text-shadow:  -0px 0px 0px #2b2b2b;
     transform: translate(-3px, 1px);
 }
@@ -193,7 +194,72 @@ blockquote{
 em{
     font-style: italic;
 }
-@media (max-aspect-ratio: 9/16){
+.title2 {
+    display: none;
+}
+.title2-logo{
+    display: none;
+}
+.title2-title {
+    color: none;
+}
+.title2-supportingtext {
+    color: none;
+}
+@media (max-aspect-ratio: 1/1) {
+    .nav-container{
+        position: absolute;
+        margin: 0;
+        top: 15%;
+        left: 50%;
+        -ms-transform: translate(-50%, -150%);
+        transform: translate(-50%, -150%);
+    }
+    .logo-container{
+        position: relative;
+        top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media (max-aspect-ratio: 4/3) {
+    .nav-container{
+        max-width: 40rem;
+}
+@media (max-aspect-ratio: 3/4){
+    .title2 {
+        display: initial;
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .title2-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 5rem;
+    }
+    .title2-title {
+        color: var(--backgroundgrey); 
+        text-align: center;
+        text-shadow:  -4px 4px 3px #2b2b2b;
+        margin: 0;
+    }
+    .title2-supportingtext {
+        color: #f9f9f9;
+        text-align: center;
+        text-shadow:  -4px 4px 3px #2b2b2b;
+        margin: 0;
+    }
+    .title-logo{
+        display: none !important;
+    }
     .toggler{
         display: unset;
     }
