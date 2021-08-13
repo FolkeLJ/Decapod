@@ -1,0 +1,10 @@
+body{
+    margin: 3rem;
+}
+.head {
+    visibility: hidden;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
