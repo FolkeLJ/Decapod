@@ -97,6 +97,9 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
               </div>
+              <div class="print">
+                <button onclick="window.print()"></button>
+              </div>
             </section>
             <section class="text-container">
                 <section class="text">
@@ -279,10 +282,52 @@ ul {
   from {opacity: .4}
   to {opacity: 1}
 }
+.print{
+    position: relative;
+    top: -2rem;
+    float: right;
+    background-image: url(media/printer.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 1;
+  }
+  button{
+    height: 2.5rem;
+    width: 2.5rem;
+    background: transparent;
+    border: none;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+@media print{
+    body{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .title{
+      white-space: nowrap;
+      position: relative;
+      top: 0;
+    }
+    .title-title{
+      font-size: 3rem;
+    }
+    .dot, .print, .numbertext, .prev, .next, .head, .footer, .slideshow-container, .logo-container{
+      display: none;
+    }
+    .text-container{
+      width: 100%;
+      transform: translateY(5rem);
+    }
+  }
 </style>
 
 <script>
-window.print()
 
     var slideIndex = 1;
 showSlides(slideIndex);
