@@ -97,7 +97,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
               </div>
-              <div class="print">
+/              <div class="print">
                 <button onclick="window.print()"></button>
               </div>
             </section>
@@ -325,6 +325,20 @@ ul {
       transform: translateY(5rem);
     }
   }
+  nav a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1.6px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: black;
+    transform: translate(-3px, 1px);
+}
 </style>
 
 <script>

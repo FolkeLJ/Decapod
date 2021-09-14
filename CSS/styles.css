@@ -32,7 +32,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     color: #f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
     -webkit-text-stroke-color: black;
 }
 .slogan {
@@ -44,7 +43,6 @@ body {
     text-decoration: none;
     margin-top: 0;
     color: #f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
 }
 .nav-container{
     position: absolute;
@@ -64,8 +62,6 @@ nav a{
     padding: 30px 0px;
     color: #f9f9f9;
     padding: 6px;
-    text-shadow:  -4px 4px 3px #2b2b2b;
-    transition: transform 0.15s, text-shadow 0.15s;
 }
 nav a:after{
     content: "";
@@ -79,7 +75,6 @@ nav a:after{
 }
 nav a:hover{
     color: #f9f9f9;
-    text-shadow:  -0px 0px 0px #2b2b2b;
     transform: translate(-3px, 1px);
 }
 nav a:hover:after {
@@ -129,7 +124,6 @@ nav a:hover:after {
     margin-top: 0;
     margin-bottom: 0;
     color:#f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
 }
 .footer-decapod-slogan{
     font-family: bree, sans-serif;
@@ -140,7 +134,6 @@ nav a:hover:after {
     text-decoration: none;
     margin-top: 0;
     color: #f9f9f9;
-    text-shadow:  -4px 4px 3px #2b2b2b;
 }
 /*FONTS*/
 h1 {
@@ -248,13 +241,11 @@ em{
     .title2-title {
         color: var(--backgroundgrey); 
         text-align: center;
-        text-shadow:  -4px 4px 3px #2b2b2b;
         margin: 0;
     }
     .title2-supportingtext {
         color: #f9f9f9;
         text-align: center;
-        text-shadow:  -4px 4px 3px #2b2b2b;
         margin: 0;
     }
     .title-logo{
